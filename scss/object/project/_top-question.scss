@@ -1,0 +1,114 @@
+.top__question {
+    padding: 2.5rem 0;
+    @include sp {
+        padding: 0.5rem 0;
+    }
+}
+
+.question__title {
+    @include text-style(3rem, calc(50/30));
+    @include sp {
+        @include text-style(2.5rem, calc(40/25));
+    }
+}
+
+.question__box {
+    margin-top: 3.5rem;
+    @include sp {
+        margin-top: 3.7rem;
+    }
+}
+
+.question__card {
+    border-top: 0.5px solid $color-text;
+    &:last-child {
+        border-bottom: 0.5px solid $color-text;
+    }
+}
+
+
+.question__card-q,
+.question__card-a {
+    display: flex;
+    align-items: center;
+    padding: 1.75rem 3rem 1.75rem 2.9rem;
+    gap: 2rem;
+    @include sp {
+        padding: 1.3rem 1.5rem 1.3rem 1.1rem;
+        gap: 2.5rem;
+    }
+
+    p {
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.6rem, calc(30/16));
+        }
+    }
+}
+
+.question__card-q {
+    cursor: pointer;
+}
+
+.question__arrow {
+    width: 1.3rem;
+    height: auto;
+    transition: transform 0.3s;
+    margin-left: auto;
+}
+
+.question__card.is-open .question__arrow {
+    transform: rotate(180deg);
+}
+
+
+
+.question__card-a {
+    background-color:rgba(203, 0, 0, 0.1);
+    display: none;
+}
+
+.question__card.is-open .question__card-a {
+    overflow: hidden;
+}
+
+.question__card-text {
+    @include sp {
+        width: vw(23.3, 37.5);
+        padding-left: 0.6rem;
+    }
+}
+
+.question__q-icon,
+.question__a-icon {
+    @include text-style(2rem, calc(30/20));
+    display: block;
+    font-style: bold;
+    color: $color-white;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+.question__q-icon{
+    &::after {
+        background-color: $color-text;
+    }
+}
+
+.question__a-icon{
+    &::after {
+        background-color: $color-main;
+    }
+}

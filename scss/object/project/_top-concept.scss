@@ -1,0 +1,96 @@
+.top__concept {
+    padding: 6.8rem 0 5.5rem;
+    @include sp {
+        padding: 4.7rem 0 3.5rem;
+    }
+}
+
+.concept__title {
+    text-align: center;
+    h2 {
+        @include text-style(3.5rem, calc(50/35));
+        margin-bottom: 1.5rem;
+        @include sp {
+            @include text-style(2.5rem, calc(40/25));
+            margin-bottom: 0.5rem;
+        }
+    }
+    p {
+        font-weight:500;
+        @include text-style(1.8rem, calc(30/18));
+        @include sp {
+            margin-left: -0.7rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+.concept__image {
+    margin-top: 3.4rem;
+    @include sp {
+        margin-top: 2.2rem;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.concept__3e {
+    margin-top: 2rem;
+    position: relative;
+    @include sp {
+        margin-top: 3.3rem;
+    }
+}
+
+.concept__3e__arrow {
+    position: absolute;
+    top: -2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    img {
+        height: 19rem;
+    }
+}
+
+.concept__3e__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    &:not(:first-child) {
+        margin-top: 1.8rem;
+    }
+}
+
+.concept__3e__item-en {
+    @include text-style(2.5rem, calc(50/25));
+    @include sp {
+        @include text-style(2rem, calc(50/20));
+    }
+    flex: 1;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.concept__3e__item-jp {
+    @include text-style(2.3rem, calc(50/23));
+    @include sp {
+        @include text-style(2rem, calc(50/20));
+    }
+    font-weight: 500;
+    color: $color-text;
+    flex: 1;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.concept-radius-red {
+    &::before {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

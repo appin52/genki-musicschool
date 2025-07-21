@@ -1,0 +1,121 @@
+.blog-blog-list__main {
+    padding-top: 7.3rem;
+    padding-bottom: 21rem;
+    @include sp {
+        padding-top: 5.5rem;
+        padding-bottom: 20rem;
+    }
+}
+
+.blog-blog-list__main-title {
+    @include text-style(2.5rem, calc(25/25));
+} 
+
+// items
+.blog-blog-list__main-items {
+    margin-top: 4.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    @include sp {
+        gap: 3.9rem;
+    }
+}
+
+// card
+.blog-blog__items-card {
+    display: flex;
+    gap: 5rem;
+    color: inherit;
+    text-decoration: none;
+    @include transition;
+    @include sp {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    &:hover {
+        @include hover-opacity;
+    }
+}
+
+.blog-blog__card-image {
+    width: 26rem;
+    height: 18.4rem;
+    @include sp {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 33.5 / 20;
+    }
+    img {
+        object-fit: cover;
+    }
+}
+
+// text
+.blog-blog__card-text {
+    flex: 1;
+    @include sp {
+        width: 100%;
+    }
+    h3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include text-style(2rem, calc(25/20));
+        @include sp {
+            @include text-style(2rem, calc(30/20));
+            margin-top: 3.1rem;
+            -webkit-line-clamp: 2;
+        }
+    }
+    time {
+        display: block;
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+        @include sp {
+            text-align: right;
+            margin-top: 0.4rem;
+        }
+    }
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include text-style(1.8rem, calc(30/18));
+        font-weight: 500;
+        margin-top: 1.4rem;
+        @include sp {
+            @include text-style(1.6rem, calc(30/16));
+            margin-top: 0.9rem;
+            -webkit-line-clamp: 5;
+        }
+    }
+}
+
+// btn
+.blog-blog__card-btn {
+    @include text-style(1.5rem, calc(25/15));
+    min-width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding-inline: 0.5rem;
+    @include sp {
+        width: 9rem;
+    }
+}
+
+
+// pagination
+.blog-blog-list__pagination {
+    margin-top: 7rem;
+    @include sp {
+        margin-top: 6rem;
+    }
+}

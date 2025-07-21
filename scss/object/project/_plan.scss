@@ -1,0 +1,332 @@
+.plan__main {
+    padding-bottom: 22.3rem;
+    @include sp {
+        padding-bottom: 18.3rem;
+    }
+}
+
+.plan__main-price {
+    margin-top: 7.3rem;
+    h2 {
+        @include text-style(2.5rem, 1);
+    }
+
+    @include sp {     
+        margin-top: 5.5rem;
+    }
+}
+
+.plan__price-system-btn {
+    margin-top: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    span {
+        width: 1.85rem;
+        height: 0.3rem;
+        background-color: $color-text;
+        position: relative;
+        @include sp {
+            margin-top: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: $color-text;
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+
+    @include sp {
+        margin-top:4.5rem;
+        flex-direction: column;
+        gap: 2.8rem;
+    }
+}
+
+.price-system__btn {
+    @include text-style(2rem, calc(33/20));
+    width: 21rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan__price-system-text {
+    margin-top: 4.8rem;
+    margin-left: -0.5rem;
+    @include sp {
+        margin-left: 0;
+    }
+    p {
+        @include text-style(1.8rem, calc(30/18));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.6rem, calc(30/16));
+        }
+    }
+}
+
+
+
+.plan__main-plan {
+    margin-top: 6.7rem;
+    @include sp {
+        margin-top: 3.7rem;
+    }
+    h2 {
+        @include text-style(2.5rem, 1);
+        @include sp {
+            @include text-style(2.5rem, calc(40/25));
+        }
+    }
+
+    h3 {
+        @include text-style(2.2rem, calc(33/20));
+    }
+
+    h4 {
+        @include text-style(2rem, calc(33/20));
+        @include sp {
+            @include text-style(2rem, calc(25/20));
+        }
+    }
+
+    h5 {
+        @include text-style(1.7rem, calc(30/17));
+        @include sp {
+            @include text-style(1.6rem, calc(30/16));
+        }
+    }
+
+    h6 {
+        @include text-style(1.7rem, calc(25/17));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.6rem, calc(25/16));
+        }
+    }
+
+    p {
+        @include text-style(1.7rem, calc(33/17));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.7rem, calc(25/17));
+        }
+    }
+}
+
+.plan__table-cell {
+    border: 0.5px solid $color-text;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+// ヘッダー
+.plan__table-header-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin-top: 5.5rem;
+    align-items: end; 
+    
+    @include sp {
+        margin-top: 1.3rem;
+    }
+
+    @include sp-710 {
+        grid-template-columns: repeat(4, 16.75rem);
+    }
+}
+
+
+.plan__table-recommend {
+    height: 8rem; 
+    padding: 0.65rem 0.5rem 0.65rem 0.5rem;
+    border:none;
+
+    @include sp {
+        height: 9rem;
+        padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+    }
+    span {
+        @include text-style(1.7rem, calc(33/17));
+    }
+}
+
+.plan__table-normal {
+    height: 5rem; 
+    padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+    border:none;
+
+    @include sp {
+        height: 6.6rem;
+        padding: 1rem 0.5rem 0.7rem 0.5rem;
+    }
+}
+
+// ボディ
+.plan__plan-table-body {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    
+    @include sp {
+        min-width: 67rem; // 4列 × 16.75rem = 67rem
+    }
+
+    th,
+    td {
+        border: 0.5px solid $color-text;
+        text-align: center;
+        vertical-align: middle;
+        height: 8.5rem; 
+        padding: 1rem 0.5rem;
+        
+        @include sp {
+            width: 16.75rem;
+            padding: 0.8rem 0.5rem;
+        }
+    }
+}
+
+.plan__table-title {
+    text-align: left !important;
+    padding-left: 2rem !important;
+    @include sp {
+        padding-left: 1rem !important;
+    }   
+}
+
+
+
+
+
+
+
+// タイトル
+.plan__table-title {
+    text-align: left;
+    padding: 1rem 0.5rem 1rem 2rem;
+    @include sp {
+        padding: 0.8rem 0.5rem 0.8rem 1rem;
+    }
+}
+  
+
+
+//table内要素
+.bg-plan-gray {
+    background: rgba(80, 80, 80, 0.15);
+}
+
+.plan__table-ball-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    line-height: 1;
+    height: 100%;
+}
+
+.plan__table-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+    span{
+        width: 3rem;
+        height: 0.1rem;
+        border: 0.1rem solid #707070;
+        display: block;
+    }
+}
+
+.plan__table-ball-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.plan__table-ball {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.plan__table-ball-red {
+    background-color: $color-main;
+}
+
+.plan__table-ball-black {
+    background-color: $color-text;
+}
+
+
+// テーブルボディの境界線設定
+.plan__plan-table-body {
+    th:first-child,
+    td:first-child {
+        border-left: none;
+    }
+     
+    th:last-child,
+    td:last-child {
+        border-right: none;
+    }
+     
+    tbody tr:last-child th,
+    tbody tr:last-child td {
+        border-bottom: 0.5px solid $color-text;
+    }
+}
+
+
+.plan__plan-plz-contact {
+    margin-top: 1rem;
+    @include sp {
+        margin-top: 1.9rem;
+    }
+    p {
+        @include text-style(1.7rem, calc(25/17));
+        font-weight: 500;
+        @include sp {
+            @include text-style(1.6rem, calc(30/16));
+        }
+    }
+}
+
+// sp時にスクロール
+.plan__table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 1.7rem;
+}
+
+// スクロールバー
+.plan__table-scroll::-webkit-scrollbar {
+    height: 2.3rem;             // スクロールバー自体の太さ
+}
+   
+.plan__table-scroll::-webkit-scrollbar-track {
+    background:rgba(80, 80, 80, 0.15);     // スクロールバーの背景部分
+}
+   
+.plan__table-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(80, 80, 80, 0.25);    
+}
