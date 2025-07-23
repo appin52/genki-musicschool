@@ -64,7 +64,7 @@ $color-pocket: #DC4F5A;      // pocket
 // トランジション
 // -------------------------
 @mixin transition {
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 @mixin hover-opacity {

@@ -40,37 +40,45 @@
     width: 27rem;
     display: block;
     color: inherit;
+    @include transition;
+
     @include sp {
         width: 100%;
     }
     
     &:hover {
-        @include transition;
         .voice__card-image {
             overflow: hidden;
             img {
                 @include hover-bigger;
-                @include transition;
+
             }
         }
         .voice__card-text {
             h3,p {
                 @include hover-opacity;
-                @include transition;
+
             }
         }
     }
 }
 
 .voice__card-image {
+    @include transition;
+
     img {
         object-fit: cover;
+        transform: scale(1);
     }
 }
 
 .voice__card-text {
+    @include transition;
+
     h3 {
         @include text-style(2.2rem, calc(33/22));
+        @include transition;
+
         margin-top: 1.7rem;
         @include sp {
             margin-top: 2.7rem;
@@ -78,6 +86,7 @@
     }
 
     p {
+        @include transition;
         @include text-style(1.8rem, calc(30/18));
         font-weight: 500;
         margin-top: 1rem;

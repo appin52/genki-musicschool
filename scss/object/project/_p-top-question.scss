@@ -67,6 +67,7 @@
 .question__card-a {
     background-color:rgba(203, 0, 0, 0.1);
     display: none;
+    cursor: pointer;
 }
 
 .question__card.is-open .question__card-a {
