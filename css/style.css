@@ -399,7 +399,7 @@ html {
 body {
   font-weight: 700;
   color: #000000;
-  font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: "YuGothic", "Yu Gothic", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
 h1, h2, h3, h4, label, input, a, ul, li {
@@ -458,6 +458,7 @@ a {
 }
 
 .top__contact {
+  display: none;
   margin-top: 2.8rem;
   text-align: right;
   position: fixed;
@@ -1231,7 +1232,12 @@ footer {
 }
 @media screen and (min-width: 768px) {
   .c-band-text {
+    display: -webkit-box;
     overflow: hidden;
+    white-space: nowrap;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1253,6 +1259,11 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.c-band-text a:hover {
+  opacity: 0.5;
 }
 .c-band .inner {
   height: inherit;
@@ -1266,12 +1277,18 @@ footer {
   max-width: 94rem;
   margin: 0 auto;
   padding-inline: 3rem;
-  overflow-x: auto;
+  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .c-band .inner {
     padding-inline: 0;
     margin: 0 2rem;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .c-band .inner::-webkit-scrollbar {
+    display: none;
   }
 }
 

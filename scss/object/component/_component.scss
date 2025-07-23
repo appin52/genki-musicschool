@@ -106,7 +106,12 @@
         align-items: center;
         
         @include pc {
+            display: -webkit-box;
             overflow: hidden;
+            white-space: nowrap;
+            -webkit-line-clamp: 1; 
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
         }
 
         @include sp {
@@ -120,6 +125,11 @@
             display: inline-flex;
             align-items: center;
             height: inherit;
+            @include transition;
+
+            &:hover {
+                @include hover-opacity;
+            }
         }
 
     }
@@ -132,11 +142,18 @@
         max-width: 94rem;
         margin: 0 auto;
         padding-inline: 3rem;
-        overflow-x: auto;
+        overflow: hidden;
         
         @include sp {
             padding-inline: 0;
             margin: 0 2rem;
+            overflow-x: auto;
+            -ms-overflow-style: none; 
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+                display: none;        
+            }
         }
     }
 

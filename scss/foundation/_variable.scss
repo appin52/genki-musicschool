@@ -6,7 +6,7 @@
 // -------------------------
 
 // フォントファミリー
-$font-family-base: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+$font-family-base: "YuGothic", "Yu Gothic", "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
 
 // フォントサイズ
 @mixin text-style($size, $lineHeight) {

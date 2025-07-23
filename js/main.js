@@ -89,9 +89,14 @@ $(".js-question-trigger").click(function(){
 // ==========================================================================
 $(window).scroll(function() {
     const scrollTop = $(this).scrollTop();
-    const fvHeight = $('#first-view').outerHeight();
-    const mainPaddingTop = parseInt($('.header-padding').css('padding-top'));
-    const threshold = fvHeight + mainPaddingTop;
+    
+    // #first-viewが存在する場合はその高さを使用、存在しない場合は100pxを基準値とする
+    let threshold = 100; // デフォルト値
+    if ($('#first-view').length > 0) {
+        const fvHeight = $('#first-view').outerHeight();
+        const mainPaddingTop = parseInt($('.header-padding').css('padding-top'));
+        threshold = fvHeight + mainPaddingTop;
+    }
     
     if (scrollTop > threshold && !$(".hamburger-menu").hasClass("active")) {
         $('#upper-arrow1').fadeIn();
@@ -223,7 +228,17 @@ $('#upper-arrow2 a').click(function() {
 $(function() {
 
     $(window).on("scroll", function() {
-        if ($(this).scrollTop() > 100 && !$(".hamburger-menu").hasClass("active")) {
+        const scrollTop = $(this).scrollTop();
+        
+        // #first-viewが存在する場合はその高さを使用、存在しない場合は100pxを基準値とする
+        let threshold = 100; // デフォルト値
+        if ($('#first-view').length > 0) {
+            const fvHeight = $('#first-view').outerHeight();
+            const mainPaddingTop = parseInt($('.header-padding').css('padding-top'));
+            threshold = fvHeight + mainPaddingTop;
+        }
+        
+        if (scrollTop > threshold && !$(".hamburger-menu").hasClass("active")) {
             $("#contact-btn").fadeIn(300);
             } else {
             $("#contact-btn").fadeOut(300);
