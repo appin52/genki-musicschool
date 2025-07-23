@@ -537,7 +537,7 @@ a {
   overflow: hidden;
 }
 .voice-slider .slick-slide {
-  padding: 0 1.75rem;
+  margin: 0 1.75rem;
 }
 
 .slick-prev,
@@ -1895,26 +1895,25 @@ footer {
 .voice__card:hover .voice__card-image img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .voice__card:hover .voice__card-text h3, .voice__card:hover .voice__card-text p {
   opacity: 0.5;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .voice__card-image {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  overflow: hidden;
 }
 .voice__card-image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.voice__card-text {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .voice__card-text h3 {
   font-size: 2.2rem;
   line-height: 1.5;

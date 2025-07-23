@@ -51,29 +51,30 @@
             overflow: hidden;
             img {
                 @include hover-bigger;
+                @include transition;
+
 
             }
         }
         .voice__card-text {
             h3,p {
                 @include hover-opacity;
-
+                @include transition;
             }
         }
     }
 }
 
 .voice__card-image {
-    @include transition;
+    overflow: hidden;
 
     img {
+        @include transition;
         object-fit: cover;
-        transform: scale(1);
     }
 }
 
 .voice__card-text {
-    @include transition;
 
     h3 {
         @include text-style(2.2rem, calc(33/22));
