@@ -2580,20 +2580,6 @@ footer {
   }
 }
 
-.plan__table-cell {
-  border: 0.5px solid #000000;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .plan__plan-table {
   width: 100%;
   border-collapse: collapse;
@@ -2605,24 +2591,40 @@ footer {
   }
 }
 
-.plan__table-header-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 100%;
+.plan__table-header {
   margin-top: 5.5rem;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+}
+.plan__table-header th {
+  text-align: center;
+  vertical-align: middle;
+  height: 8.5rem;
+  padding: 1rem 0.5rem;
 }
 @media screen and (max-width: 767px) {
-  .plan__table-header-grid {
+  .plan__table-header th {
+    width: 16.75rem;
+    padding: 0.8rem 0.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .plan__table-header {
     margin-top: 1.3rem;
   }
 }
 @media screen and (max-width: 710px) {
-  .plan__table-header-grid {
+  .plan__table-header {
     grid-template-columns: repeat(4, 16.75rem);
   }
+}
+
+.plan__table-cell {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .plan__table-recommend {
@@ -2758,12 +2760,15 @@ footer {
   background-color: #000000;
 }
 
+.plan__plan-table-body tr:first-child th {
+  border-top: 0.5px solid #000000;
+}
 .plan__plan-table-body th:last-child,
 .plan__plan-table-body td:last-child {
   border-right: none;
 }
-.plan__plan-table-body tbody tr:last-child th,
-.plan__plan-table-body tbody tr:last-child td {
+.plan__plan-table-body tr:last-child th,
+.plan__plan-table-body tr:last-child td {
   border-bottom: 0.5px solid #000000;
 }
 

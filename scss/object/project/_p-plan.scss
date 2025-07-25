@@ -124,13 +124,7 @@
     }
 }
 
-.plan__table-cell {
-    border: 0.5px solid $color-text;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .plan__plan-table {
     width: 100%;
@@ -143,12 +137,21 @@
 
 
 // ヘッダー
-.plan__table-header-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
+.plan__table-header{
+    // width: 100%;
     margin-top: 5.5rem;
-    align-items: end; 
+
+    th{
+        text-align: center;
+        vertical-align: middle;
+        height: 8.5rem; 
+        padding: 1rem 0.5rem;
+        
+        @include sp {
+            width: 16.75rem;
+            padding: 0.8rem 0.5rem;
+        }
+    }
     
     @include sp {
         margin-top: 1.3rem;
@@ -159,6 +162,11 @@
     }
 }
 
+.plan__table-cell {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 .plan__table-recommend {
     height: 8rem; 
@@ -273,18 +281,17 @@
 
 // テーブルボディの境界線設定
 .plan__plan-table-body {
-    // th:first-child,
-    // td:first-child {
-    //     border-left: none;
-    // }
+    tr:first-child th{
+        border-top: 0.5px solid $color-text;
+    }
      
     th:last-child,
     td:last-child {
         border-right: none;
     }
      
-    tbody tr:last-child th,
-    tbody tr:last-child td {
+    tr:last-child th,
+    tr:last-child td {
         border-bottom: 0.5px solid $color-text;
     }
 }
