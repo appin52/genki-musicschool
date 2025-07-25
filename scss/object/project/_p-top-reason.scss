@@ -40,6 +40,10 @@
     img {
         width: 100%;
         object-fit: cover;
+        aspect-ratio: 35 / 24.7;
+        @include sp {
+            aspect-ratio: 33.5 / 20;
+        }
     }
 }
 

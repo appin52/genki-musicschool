@@ -33,14 +33,14 @@
 
 // カード --------------------------------
 .blog-details-main__card-image {
-    aspect-ratio: 60 / 35;
-    @include sp {
-        aspect-ratio: 33.5 / 20;
-    }
+    width: 100%;
+    
     img {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
+        aspect-ratio: 60 / 35;
+        @include sp {
+            aspect-ratio: 33.5 / 20;
+        }
     }
 }
 
@@ -199,11 +199,9 @@
 // image --------------------------------
 .blog-details-main__image {
     width: 33.5rem;
-    aspect-ratio: 33.5 / 20;
     margin-top: 1.7rem;
     img {
-        width: 100%;
-        height: 100%;
+        aspect-ratio: 33.5 / 20;
         object-fit: cover;
     }
     @include sp {
@@ -378,14 +376,15 @@
 
 .blog-article__card-image {
     width: 20rem;
-    aspect-ratio: 20 / 14;
     @include sp {
         width: 16rem;
-        aspect-ratio: 16 / 11;
     }
     img {
-        width: 100%;
+        aspect-ratio: 20 / 14;
         object-fit: cover;
+        @include sp {
+            aspect-ratio: 16 / 11;
+        }
     }
 }
 

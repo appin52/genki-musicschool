@@ -41,14 +41,16 @@
 
 .blog-blog__card-image {
     width: 26rem;
-    height: 18.4rem;
     @include sp {
         width: 100%;
-        height: auto;
-        aspect-ratio: 33.5 / 20;
     }
+    
     img {
         object-fit: cover;
+        aspect-ratio: 26 / 18.4;
+        @include sp {
+            aspect-ratio: 33.5 / 20;
+        }
     }
 }
 

@@ -54,20 +54,20 @@
 
 .search__card-image {
     width: 26rem;
-    aspect-ratio: 26/18.4;
     @include sp {
         width: 100%;
-        aspect-ratio: 33.5/20;
     }
     picture {
         display: block;
     }
 
     img {
-        width: 100%;
-        height: 100%;
+        aspect-ratio: 26/18.4;
         object-fit: cover;
         display: block;
+        @include sp {
+            aspect-ratio: 33.5/20;
+        }
     }
 }
 

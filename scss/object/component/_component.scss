@@ -271,15 +271,13 @@
 
     &-image {
         width: 9.8rem;
-        aspect-ratio: 9.8 / 6.8;
 
         picture {
             display: block;
         }
 
         img {
-        height: 100%;
-
+            aspect-ratio: 9.8 / 6.8;
             object-fit: cover;
         }
     }
