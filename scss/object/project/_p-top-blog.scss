@@ -81,8 +81,13 @@
 
 .btn-blog {
     @include text-style(1.5rem, calc(25/15));
-    width: 8rem;
+    min-width: 8rem;
     height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 0.5rem;
+
     @include sp {
         width: 9rem;
     }
