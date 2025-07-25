@@ -2215,9 +2215,11 @@ footer {
   overflow: hidden;
 }
 
+.question__card-text {
+  max-width: 75rem;
+}
 @media screen and (max-width: 767px) {
   .question__card-text {
-    width: 62.1333333333vw;
     padding-left: 0.6rem;
   }
 }
