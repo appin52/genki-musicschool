@@ -4011,17 +4011,15 @@ footer {
 .blog-details-side__category__box-item {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-.blog-details-side__category__box-item:hover .category-item__text {
-  opacity: 0.5;
-}
-.blog-details-side__category__box-item p {
   font-size: 1.7rem;
   line-height: 1.6470588235;
   font-weight: 500;
   padding-top: 1.2rem;
   padding-bottom: 0.67rem;
   border-bottom: 0.5px solid #000000;
+}
+.blog-details-side__category__box-item a:hover .category-item__text {
+  opacity: 0.5;
 }
 
 .search__main {
