@@ -1316,14 +1316,85 @@ footer {
   }
 }
 
-.c-blog__card {
+.c-category-parent {
   position: relative;
 }
-.c-blog__card-btn {
+
+.c-category {
+  border: 0.1rem solid #CB0000;
+  color: #ffffff;
+  background-color: #CB0000;
   text-align: center;
   position: absolute;
   top: 0;
   left: 0;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3rem;
+  padding-inline: 0.5rem;
+}
+
+.c-category__top-blog {
+  min-width: 8rem;
+}
+@media screen and (max-width: 767px) {
+  .c-category__top-blog {
+    width: 9rem;
+  }
+}
+
+.c-category__blog-list {
+  min-width: 8rem;
+}
+@media screen and (max-width: 767px) {
+  .c-category__blog-list {
+    min-width: 9rem;
+  }
+}
+
+.c-category__blog-details {
+  min-width: 8rem;
+}
+@media screen and (max-width: 767px) {
+  .c-category__blog-details {
+    min-width: 9rem;
+  }
+}
+
+.c-category__search {
+  min-width: 8rem;
+}
+@media screen and (max-width: 767px) {
+  .c-category__search {
+    min-width: 9rem;
+  }
+}
+
+.c-category__result-list {
+  min-width: 10rem;
+}
+@media screen and (max-width: 767px) {
+  .c-category__result-list {
+    min-width: 9rem;
+  }
+}
+
+.c-category__result-details {
+  min-width: 10rem;
+}
+@media screen and (max-width: 767px) {
+  .c-category__result-details {
+    min-width: 8rem;
+  }
 }
 
 .c-blog-side__title {
@@ -2366,28 +2437,6 @@ footer {
   }
 }
 
-.btn-blog {
-  font-size: 1.5rem;
-  line-height: 1.6666666667;
-  min-width: 8rem;
-  height: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-inline: 0.5rem;
-}
-@media screen and (max-width: 767px) {
-  .btn-blog {
-    width: 9rem;
-  }
-}
-
 .blog__linklist {
   margin-top: 3.7rem;
   text-align: right;
@@ -3298,28 +3347,6 @@ footer {
   }
 }
 
-.blog-blog__card-btn {
-  font-size: 1.5rem;
-  line-height: 1.6666666667;
-  min-width: 8rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 3rem;
-  padding-inline: 0.5rem;
-}
-@media screen and (max-width: 767px) {
-  .blog-blog__card-btn {
-    width: 9rem;
-  }
-}
-
 .blog-blog-list__pagination {
   margin-top: 7rem;
 }
@@ -3412,21 +3439,6 @@ footer {
 }
 .blog-details-main__card-text span {
   display: inline-block;
-}
-
-.blog-details-main__card-btn {
-  width: 8rem;
-  height: 3rem;
-  line-height: 3rem;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.6666666667;
-  padding-top: 0.2rem;
-}
-@media screen and (max-width: 767px) {
-  .blog-details-main__card-btn {
-    width: 9rem;
-  }
 }
 
 .blog-details-main__sns {
@@ -4228,19 +4240,6 @@ footer {
   }
 }
 
-.search__card-btn {
-  font-size: 1.5rem;
-  line-height: 1.6666666667;
-  width: 8rem;
-  height: 3rem;
-  padding-top: 0.2rem;
-}
-@media screen and (max-width: 767px) {
-  .search__card-btn {
-    width: 9rem;
-  }
-}
-
 .search__pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4443,19 +4442,6 @@ footer {
 @media screen and (max-width: 767px) {
   .result-list__card-text time {
     margin-top: 0.4rem;
-  }
-}
-
-.result-list__card-btn {
-  font-size: 1.5rem;
-  line-height: 1.6666666667;
-  width: 10rem;
-  height: 3rem;
-  padding-top: 0.2rem;
-}
-@media screen and (max-width: 767px) {
-  .result-list__card-btn {
-    width: 9rem;
   }
 }
 
@@ -4751,21 +4737,6 @@ footer {
 @media screen and (max-width: 767px) {
   .result-article__card-text span {
     display: none;
-  }
-}
-
-.result-article__card-btn {
-  width: 10rem;
-  height: 3rem;
-  line-height: 3rem;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.6666666667;
-  padding-top: 0.2rem;
-}
-@media screen and (max-width: 767px) {
-  .result-article__card-btn {
-    width: 8rem;
   }
 }
 

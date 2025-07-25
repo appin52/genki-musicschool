@@ -121,16 +121,7 @@
     }
 }
 
-// btn
-.search__card-btn {
-    @include text-style(1.5rem, calc(25/15));
-    width: 8rem;
-    height: 3rem;
-    padding-top: 0.2rem;
-    @include sp {
-        width: 9rem;
-    }
-}
+
 
 
 

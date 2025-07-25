@@ -236,15 +236,3 @@
     }
 }
 
-.result-article__card-btn {
-    width: 10rem;
-    height: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    @include text-style(1.5rem, calc(25/15));
-    padding-top: 0.2rem;
-    @include sp {
-        width: 8rem;
-    }
-    // sp時赤ボタンの中身がpcと違うのでpcの文字に合わせました
-}
