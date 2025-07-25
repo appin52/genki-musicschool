@@ -12,19 +12,17 @@
 // card
 .result-main__card-image {
     width: 100%;
-    aspect-ratio: 88 / 40;
-    @include sp {
-        aspect-ratio: 335 / 236;
-    }
     img {
-        width: 100%;
-        height: 100%;
+        aspect-ratio: 88 / 40;
         object-fit: cover;
+        @include sp {
+            aspect-ratio: 33.5 / 23.6;
+        }
     }
 }
 
 .result-main__card-text {
-    h3 {
+    h1 {
         @include text-style(2.5rem, calc(40/25));
         margin-top: 5rem;
 
@@ -187,14 +185,15 @@
 
 .result-article__card-image {
     width: 26rem;
-    aspect-ratio: 260 / 183;
     @include sp {
         width: 16rem;
-        aspect-ratio: 16 / 11;
     }
     img {
-        width: 100%;
+        aspect-ratio: 26 / 18.3;
         object-fit: cover;
+        @include sp {
+            aspect-ratio: 16 / 11;
+        }
     }
 }
 
@@ -236,15 +235,3 @@
     }
 }
 
-.result-article__card-btn {
-    width: 10rem;
-    height: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    @include text-style(1.5rem, calc(25/15));
-    padding-top: 0.2rem;
-    @include sp {
-        width: 8rem;
-    }
-    // sp時赤ボタンの中身がpcと違うのでpcの文字に合わせました
-}

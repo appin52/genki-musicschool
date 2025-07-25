@@ -41,14 +41,16 @@
 
 .blog-blog__card-image {
     width: 26rem;
-    height: 18.4rem;
     @include sp {
         width: 100%;
-        height: auto;
-        aspect-ratio: 33.5 / 20;
     }
+    
     img {
         object-fit: cover;
+        aspect-ratio: 26 / 18.4;
+        @include sp {
+            aspect-ratio: 33.5 / 20;
+        }
     }
 }
 
@@ -98,24 +100,6 @@
 }
 
 // btn
-.blog-blog__card-btn {
-    @include text-style(1.5rem, calc(25/15));
-    min-width: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3rem;
-    padding-inline: 0.5rem;
-    @include sp {
-        width: 9rem;
-    }
-}
 
 
-// pagination
-.blog-blog-list__pagination {
-    margin-top: 7rem;
-    @include sp {
-        margin-top: 6rem;
-    }
-}
+
