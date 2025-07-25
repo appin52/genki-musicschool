@@ -81,6 +81,13 @@
     @include sp {
         gap: 0.2rem;
     }
+
+    a {
+        @include transition;
+        &:hover {
+            @include hover-opacity;
+        }
+    }
 }
 
 
@@ -474,7 +481,7 @@
     }
 
     &:hover {
-        background-color: rgba($color-band, 0.8);
+        @include hover-opacity;
     }
 }
 

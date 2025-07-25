@@ -3389,6 +3389,13 @@ footer {
     gap: 0.2rem;
   }
 }
+.blog-details-main__sns a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.blog-details-main__sns a:hover {
+  opacity: 0.5;
+}
 
 .blog__sns-box {
   display: -webkit-box;
@@ -3834,7 +3841,7 @@ footer {
   }
 }
 .blog-details-side__banner-link:hover {
-  background-color: rgba(232, 232, 232, 0.8);
+  opacity: 0.5;
 }
 
 .blog-details-side__search {
