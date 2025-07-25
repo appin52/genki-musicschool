@@ -45,7 +45,7 @@
 }
 
 .blog-details-main__card-text{
-    h2 {
+    h1 {
         @include text-style(2.5rem, calc(40/25));
         margin-top: 5.4rem;
         line-height: 1;

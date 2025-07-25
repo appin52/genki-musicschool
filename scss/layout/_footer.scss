@@ -35,8 +35,12 @@ footer {
     width: 4.2rem;
     display: inline-block;
     padding: 0.5rem;
+    @include transition;
     @include sp {
         margin-top: 0.7rem;
+    }
+    &:hover {
+        @include hover-opacity;
     }
 }
 
@@ -53,6 +57,9 @@ footer {
 .footer__sns {
     display: flex;
     justify-content: center;
+    
+
+
     @include sp {
         gap: 2.5rem;
     }
@@ -65,14 +72,25 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.2rem;
+    padding-top:0.5rem;
+    margin-top: -0.5rem;
 
-    a {
-        padding:0.5rem;
+    li {
+        padding-top:0.5rem;
         margin-top: -0.5rem;
-        @include transition;
-        
-        &:hover {
-            @include hover-opacity;
+
+
+        a {
+            padding:0.5rem;
+            margin-top: -0.5rem;
+            @include transition;
+            
+            &:hover {
+                @include hover-opacity;
+            }
         }
+    
     }
+
+    
 }

@@ -24,7 +24,7 @@
 }
 
 .result-main__card-text {
-    h3 {
+    h1 {
         @include text-style(2.5rem, calc(40/25));
         margin-top: 5rem;
 

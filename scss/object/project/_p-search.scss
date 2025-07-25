@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
    
-    p {
+    h1,p { 
         @include text-style(1.8rem, calc(30/18));
         font-weight: 500;
         span {
