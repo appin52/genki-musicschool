@@ -130,9 +130,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
+
+.plan__plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    @include sp {
+        min-width: 67rem; // 4列 × 16.75rem = 67rem
+    }
+}
+
 
 // ヘッダー
 .plan__table-header-grid {
@@ -179,17 +187,9 @@
 
 // ボディ
 .plan__plan-table-body {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-    
-    @include sp {
-        min-width: 67rem; // 4列 × 16.75rem = 67rem
-    }
-
     th,
     td {
-        border: 0.5px solid $color-text;
+        border-right: 0.5px solid $color-text;
         text-align: center;
         vertical-align: middle;
         height: 8.5rem; 
@@ -211,11 +211,6 @@
 }
 
 
-
-
-
-
-
 // タイトル
 .plan__table-title {
     text-align: left;
@@ -224,8 +219,6 @@
         padding: 0.8rem 0.5rem 0.8rem 1rem;
     }
 }
-  
-
 
 //table内要素
 .bg-plan-gray {
@@ -280,10 +273,10 @@
 
 // テーブルボディの境界線設定
 .plan__plan-table-body {
-    th:first-child,
-    td:first-child {
-        border-left: none;
-    }
+    // th:first-child,
+    // td:first-child {
+    //     border-left: none;
+    // }
      
     th:last-child,
     td:last-child {
