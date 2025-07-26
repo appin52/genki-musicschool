@@ -74,6 +74,9 @@
 // text
 .search__card-text {
     flex: 1;
+ 
+
+    
     @include sp {
         width: 100%;
     }
@@ -99,6 +102,11 @@
         @include text-style(1.8rem, calc(30/18));
         font-weight: 500;
         margin-top: 1rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; 
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
         @include sp {
             margin-top: 0.9rem;
             @include text-style(1.6rem, calc(30/16));
