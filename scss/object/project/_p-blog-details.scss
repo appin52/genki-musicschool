@@ -81,6 +81,13 @@
     @include sp {
         gap: 0.2rem;
     }
+
+    a {
+        @include transition;
+        &:hover {
+            @include hover-opacity;
+        }
+    }
 }
 
 
@@ -392,6 +399,12 @@
     flex: 1;
     h3 {
         @include text-style(2rem, calc(25/20));
+        display: -webkit-box;
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
         @include sp {
             @include text-style(1.7rem, calc(28/17));
             margin-top: 0.8rem;
@@ -474,7 +487,7 @@
     }
 
     &:hover {
-        background-color: rgba($color-band, 0.8);
+        @include hover-opacity;
     }
 }
 
@@ -616,20 +629,18 @@
 
 .blog-details-side__category__box-item {
     @include transition;
+    @include text-style(1.7rem, calc(28/17));
+    font-weight: 500;
+    padding-top: 1.2rem;
+    padding-bottom: 0.67rem;
+    border-bottom: 0.5px solid $color-text;
 
-    &:hover {
+    a:hover {
         .category-item__text {
           @include hover-opacity;
         }
     }
 
-    p {
-        @include text-style(1.7rem, calc(28/17));
-        font-weight: 500;
-        padding-top: 1.2rem;
-        padding-bottom: 0.67rem;
-        border-bottom: 0.5px solid $color-text;
-    }
 } 
 
 

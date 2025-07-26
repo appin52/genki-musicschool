@@ -70,8 +70,7 @@
             @include text-style(1.6rem, calc(30/16));
         }
     }
-    input,
-    textarea {
+    input{
         @include text-style(1.5rem, calc(33/15));
         font-weight: 500;
         padding-top: 0.3rem;
@@ -195,7 +194,6 @@
 
     .form__items-right {
         margin-top: -0.3rem;
-        padding-top: 1rem;
         @include sp {
             margin-top: 0;
         }
@@ -204,6 +202,11 @@
             width: 100%;
             min-height: 29rem;
             resize: vertical;
+            @include text-style(1.5rem, calc(33/15));
+            font-weight: 500;
+            padding-top: 1.3rem;
+            padding-bottom: 0.3rem;
+            padding-left: 2rem;
             @include sp {
                 min-height: 17.7rem;
             }
