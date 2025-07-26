@@ -39,6 +39,10 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
+        @include sp {
+            flex-direction: row;
+            align-items: center;
+        }
     }
     
     span {

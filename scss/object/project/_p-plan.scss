@@ -132,7 +132,8 @@
     table-layout: fixed;
     margin-top: 5.5rem;
     @include sp {
-        min-width: 67rem; // 4列 × 16.75rem = 67rem
+        margin-top: 0.2rem;
+        // min-width: 67rem; // 4列 × 16.75rem = 67rem
     }
 }
 
