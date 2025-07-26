@@ -17,36 +17,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10.6rem; // 横方向
-    // row-gap: 6rem;    // 縦方向
+    row-gap: 7rem;    // 縦方向 修正致しました
     @include sp {
         gap: 3.9rem;
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-// 2段目の上に 61rem
-.result-list__items-card:nth-child(3),
-.result-list__items-card:nth-child(4) {
-  margin-top: 6rem;
-}
-
-// 3段目の上に 71rem
-.result-list__items-card:nth-child(5),
-.result-list__items-card:nth-child(6) {
-  margin-top: 7rem;
-}
-
-// 4段目の上に 71rem
-.result-list__items-card:nth-child(7),
-.result-list__items-card:nth-child(8) {
-  margin-top: 7rem;
-}
-
-// 5段目の上に 71rem
-.result-list__items-card:nth-child(9),
-.result-list__items-card:nth-child(10) {
-  margin-top: 7rem;
-}
 
 // card
 .result-list__items-card {

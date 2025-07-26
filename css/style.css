@@ -3746,6 +3746,11 @@ footer {
 .blog-article__card-text h3 {
   font-size: 2rem;
   line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 767px) {
   .blog-article__card-text h3 {
@@ -4238,32 +4243,13 @@ footer {
   -webkit-column-gap: 10.6rem;
      -moz-column-gap: 10.6rem;
           column-gap: 10.6rem;
+  row-gap: 7rem;
 }
 @media screen and (max-width: 767px) {
   .result-list__main-items {
     gap: 3.9rem;
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-.result-list__items-card:nth-child(3),
-.result-list__items-card:nth-child(4) {
-  margin-top: 6rem;
-}
-
-.result-list__items-card:nth-child(5),
-.result-list__items-card:nth-child(6) {
-  margin-top: 7rem;
-}
-
-.result-list__items-card:nth-child(7),
-.result-list__items-card:nth-child(8) {
-  margin-top: 7rem;
-}
-
-.result-list__items-card:nth-child(9),
-.result-list__items-card:nth-child(10) {
-  margin-top: 7rem;
 }
 
 .result-list__items-card {
