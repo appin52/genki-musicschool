@@ -2906,15 +2906,10 @@ footer {
   }
 }
 .form__items-company input,
-.form__items-company textarea,
 .form__items-name input,
-.form__items-name textarea,
 .form__items-email input,
-.form__items-email textarea,
 .form__items-tel input,
-.form__items-tel textarea,
-.form__items-content input,
-.form__items-content textarea {
+.form__items-content input {
   font-size: 1.5rem;
   line-height: 2.2;
   font-weight: 500;
@@ -3046,7 +3041,6 @@ footer {
 }
 .form__items-content .form__items-right {
   margin-top: -0.3rem;
-  padding-top: 1rem;
 }
 @media screen and (max-width: 767px) {
   .form__items-content .form__items-right {
@@ -3057,6 +3051,12 @@ footer {
   width: 100%;
   min-height: 29rem;
   resize: vertical;
+  font-size: 1.5rem;
+  line-height: 2.2;
+  font-weight: 500;
+  padding-top: 1.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 2rem;
 }
 @media screen and (max-width: 767px) {
   .form__items-content .form__items-right textarea {
@@ -4297,6 +4297,11 @@ footer {
 }
 
 .result-list__card-text h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 2rem;
   line-height: 1.25;
   margin-top: 2rem;
