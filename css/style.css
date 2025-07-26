@@ -2183,21 +2183,13 @@ footer {
 
 .question__card-q,
 .question__card-a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1.75rem 3rem 1.75rem 2.9rem;
-  gap: 2rem;
+  padding: 1.75rem 5rem 1.75rem 6.5rem;
   position: relative;
 }
 @media screen and (max-width: 767px) {
   .question__card-q,
   .question__card-a {
-    padding: 1.3rem 1.5rem 1.3rem 1.1rem;
-    gap: 2.5rem;
+    padding: 1.3rem 4.5rem 1.3rem 5.5rem;
   }
 }
 .question__card-q p,
@@ -2218,6 +2210,27 @@ footer {
   cursor: pointer;
 }
 
+.question__card-a {
+  background-color: rgba(203, 0, 0, 0.1);
+  display: none;
+  cursor: pointer;
+}
+
+.question__q-icon__box,
+.question__a-icon__box {
+  position: absolute;
+  top: 50%;
+  left: 3em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (max-width: 767px) {
+  .question__q-icon__box,
+  .question__a-icon__box {
+    left: 1rem;
+  }
+}
+
 .question__arrow {
   width: 1.3rem;
   height: auto;
@@ -2226,6 +2239,9 @@ footer {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
   position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 3rem;
 }
 @media screen and (max-width: 767px) {
@@ -2237,26 +2253,12 @@ footer {
 .question__card.is-open .question__arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-}
-
-.question__card-a {
-  background-color: rgba(203, 0, 0, 0.1);
-  display: none;
-  cursor: pointer;
+  -webkit-transform-origin: center 0.2rem;
+          transform-origin: center 0.2rem;
 }
 
 .question__card.is-open .question__card-a {
   overflow: hidden;
-}
-
-.question__card-text {
-  max-width: 76rem;
-}
-@media screen and (max-width: 767px) {
-  .question__card-text {
-    max-width: 62.1333333333vw;
-    padding-left: 0.6rem;
-  }
 }
 
 .question__q-icon,
