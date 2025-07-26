@@ -130,22 +130,22 @@
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
+    margin-top: 5.5rem;
     @include sp {
-        min-width: 67rem; // 4列 × 16.75rem = 67rem
+        margin-top: 0.2rem;
+        // min-width: 67rem; // 4列 × 16.75rem = 67rem
     }
 }
 
 
 // ヘッダー
 .plan__table-header{
-    // width: 100%;
-    margin-top: 5.5rem;
 
     th{
         text-align: center;
         vertical-align: middle;
-        height: 8.5rem; 
-        padding: 1rem 0.5rem;
+        // padding: 1rem 0.5rem;
+        padding: 0.1rem;
         
         @include sp {
             width: 16.75rem;
@@ -170,12 +170,11 @@
 
 .plan__table-recommend {
     height: 8rem; 
-    padding: 0.65rem 0.5rem 0.65rem 0.5rem;
     border:none;
+
 
     @include sp {
         height: 9rem;
-        padding: 0.7rem 0.5rem 0.5rem 0.5rem;
     }
     span {
         @include text-style(1.7rem, calc(33/17));

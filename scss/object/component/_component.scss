@@ -193,7 +193,11 @@
     }
 }
 
-.c-category__blog-details {
+.c-category__blog-details{
+    min-width: 8rem;
+}
+
+.c-category__blog-details-main {
     min-width: 8rem;
     @include sp {
         min-width: 9rem;
@@ -214,13 +218,18 @@
     }
 }
 
-.c-category__result-details {
+.c-category__result-details-main {
+    min-width: 10rem;
+}
+
+.c-category__result-details{
     min-width: 10rem;
     @include sp {
         min-width: 8rem;
     }
-    // sp時赤ボタンの中身がpcと違うのでpcの文字に合わせました
 }
+
+
 
 
 .c-blog-side__title {
@@ -287,7 +296,7 @@
         p {
             @include text-style(1.6rem, calc(25/16));
             display: -webkit-box;
-            -webkit-line-clamp: 2; 
+            -webkit-line-clamp: 3; 
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;

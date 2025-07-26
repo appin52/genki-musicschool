@@ -86,28 +86,31 @@
                         </div>
                         <div class="plan__main-plan plan__plan">
                             <h2 class="c-text-center">プラン内容・月額料金</h2>
-                            <!-- table -->
-                            <div class="plan__table-scroll ">
 
+                            <div class="plan__table-scroll">
+
+                                <!-- table -->
                                 <table class="plan__plan-table">
 
+                                    <!-- ヘッダー-->
                                     <thead class="plan__table-header">
-                                        <!-- ヘッダー-->
                                         <tr>
-                                            <th class="plan__table-cell plan__table-empty"></th>
+                                            <th rowspan="2" class="plan__table-cell plan__table-empty"></th>
+                                            <th></th>
+                                            <th rowspan="2" class="plan__table-cell plan__table-header c-bg-red plan__table-recommend">
+                                                <h4><span>おすすめ</span><br>スタンダード<br class="pc_none">プラン</h4>
+                                            </th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
                                             <th class="plan__table-cell plan__table-header c-bg-black plan__table-normal">
                                                 <h4>ベーシック<br class="pc_none">プラン</h4>
-                                            </th>
-                                            <th class="plan__table-cell plan__table-header c-bg-red plan__table-recommend">
-                                                <h4><span>おすすめ</span><br>スタンダード<br class="pc_none">プラン</h4>
                                             </th>
                                             <th class="plan__table-cell plan__table-header c-bg-black plan__table-normal">
                                                 <h4>プレミアム<br class="pc_none">プラン</h4>
                                             </th>
                                         </tr>
-                                        
                                     </thead>
-
 
                                     <tbody class="plan__plan-table-body">
                                         <!-- ボディ-->
@@ -229,7 +232,9 @@
                                         </tr>
 
                                     </tbody>
+
                                 </table>
+
                             </div>
                         </div>
                         <div class="plan__plan-plz-contact">
