@@ -27,9 +27,6 @@
 }
 
 .voice__box {
-    display: flex;
-    flex-direction: row;
-    gap: 3.5rem;
     margin-top: 3.6rem;
     @include sp {
         margin-top: 4rem;
@@ -75,12 +72,17 @@
 }
 
 .voice__card-text {
-
     h3 {
         @include text-style(2.2rem, calc(33/22));
         @include transition;
-
         margin-top: 1.7rem;
+        display: -webkit-box;
+
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1; 
+        
         @include sp {
             margin-top: 2.7rem;
         }
@@ -92,5 +94,11 @@
         font-weight: 500;
         margin-top: 1rem;
         margin-right: 0;
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 4; 
     }
 }
