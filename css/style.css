@@ -1912,14 +1912,6 @@ footer {
 }
 
 .voice__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 3.5rem;
   margin-top: 3.6rem;
 }
 @media screen and (max-width: 767px) {
@@ -1971,6 +1963,11 @@ footer {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: 1.7rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
 }
 @media screen and (max-width: 767px) {
   .voice__card-text h3 {
@@ -1985,6 +1982,11 @@ footer {
   font-weight: 500;
   margin-top: 1rem;
   margin-right: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
 }
 
 .top__flow {
@@ -4029,8 +4031,8 @@ footer {
   font-size: 1.7rem;
   line-height: 1.6470588235;
   font-weight: 500;
-  padding-top: 1.2rem;
-  padding-bottom: 0.67rem;
+  padding-top: 0.95rem;
+  padding-bottom: 0.95rem;
   border-bottom: 0.5px solid #000000;
 }
 .blog-details-side__category__box-item a:hover .category-item__text {
@@ -4615,7 +4617,7 @@ footer {
   }
 }
 
-.p-pagination {
+.pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4625,7 +4627,7 @@ footer {
   font-size: 1.8rem;
   line-height: 1.6666666667;
 }
-.p-pagination-list {
+.pagination-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4636,11 +4638,11 @@ footer {
           align-items: center;
 }
 @media screen and (max-width: 767px) {
-  .p-pagination-list {
+  .pagination-list {
     gap: 0.5rem;
   }
 }
-.p-pagination-item a {
+.pagination-item a {
   display: block;
   width: 5rem;
   height: 5rem;
@@ -4652,27 +4654,27 @@ footer {
   transition: 0.3s;
 }
 @media screen and (max-width: 767px) {
-  .p-pagination-item a {
+  .pagination-item a {
     width: 4.4rem;
     height: 4.4rem;
     line-height: 4.4rem;
   }
 }
-.p-pagination-item a:hover {
+.pagination-item a:hover {
   background-color: #000000;
   color: #ffffff;
   opacity: 1 !important;
 }
-.p-pagination-item.is-current a {
+.pagination-item.is-current a {
   background-color: #000000;
   color: #ffffff;
   border-color: #000000;
 }
-.p-pagination-dots {
+.pagination-dots {
   padding-inline: 1rem;
 }
 @media screen and (max-width: 767px) {
-  .p-pagination-dots {
+  .pagination-dots {
     padding-inline: 0.6rem;
   }
 }

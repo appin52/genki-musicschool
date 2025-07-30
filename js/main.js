@@ -298,7 +298,7 @@ $(document).ready(function() {
     });
 });
 
-})(jQuery);
+
 
 
 // ==========================================================================
@@ -308,10 +308,6 @@ $(document).ready(function() {
 $(".voice-slider").slick('setPosition');
 $(window).trigger('resize');
 
-// $(window).on('resize', function() {
-//     console.log('resize event fired');
-// });
 
-// $('.voice-slider').on('setPosition', function(event, slick){
-//     console.log('slick setPosition fired');
-// });
+
+})(jQuery);

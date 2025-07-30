@@ -206,3 +206,81 @@ a {
         right: 0.5rem;
     }
 }
+
+
+// before&after------------------------------------
+
+.main__article-before-after{
+    display: flex;
+}
+
+.before-after__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    flex: 1;
+    @include transition;
+
+    &:hover {
+        @include hover-opacity;
+    }
+}
+
+.before-after__title {
+    padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
+    p{
+        @include text-style(1.7rem, calc(30/17));
+        font-weight: 500;
+    }
+}
+
+.before-after__item {
+    display: flex;
+    gap: 1.6rem;
+
+    &-image {
+        width: 9.8rem;
+
+        picture {
+            display: block;
+        }
+
+        img {
+            aspect-ratio: 9.8 / 6.8;
+            object-fit: cover;
+        }
+    }
+
+    &-text {
+        flex: 1;
+        p {
+            @include text-style(1.6rem, calc(25/16));
+            display: -webkit-box;
+            -webkit-line-clamp: 3; 
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @include sp {
+                -webkit-line-clamp: 3;
+            }
+        }
+    }
+}
+
+// before
+.before-content {
+    p{
+        padding-left: 2rem;
+        text-align: left;
+    }
+}
+
+// after
+.after-content {
+    p{
+        padding-right: 2rem;
+        text-align: right;
+    }
+}
+
