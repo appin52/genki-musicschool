@@ -3,45 +3,45 @@
 // ==========================================================================
 // Foundation
 // ==========================================================================
-@import "foundation/reset";
-@import "foundation/variable";
-@import "foundation/base";
+@use "foundation/reset";
+@use "foundation/variable" as vars;
+@use "foundation/base";
 
 // ==========================================================================
 // Layout
 // ==========================================================================
-@import "layout/header";
-@import "layout/footer";
+@use "layout/header";
+@use "layout/footer";
 
 // ==========================================================================
 // Object
 // ==========================================================================
 
 // Component
-@import "object/component/component";
+@use "object/component/component";
 
 // Project
-@import "object/project/top-main";
-@import "object/project/top-first-view";
-@import "object/project/top-message";
-@import "object/project/top-concept";
-@import "object/project/top-reason";
-@import "object/project/top-voice";
-@import "object/project/top-flow";
-@import "object/project/top-question";
-@import "object/project/top-blog";
+@use "object/project/top-main";
+@use "object/project/top-first-view";
+@use "object/project/top-message";
+@use "object/project/top-concept";
+@use "object/project/top-reason";
+@use "object/project/top-voice";
+@use "object/project/top-flow";
+@use "object/project/top-question";
+@use "object/project/top-blog";
 
-@import "object/project/plan";
-@import "object/project/contact-form";
-@import "object/project/contact-send";
-@import "object/project/blog-list";
-@import "object/project/blog-details";
-@import "object/project/search";
-@import "object/project/page-404";
+@use "object/project/plan";
+@use "object/project/contact-form";
+@use "object/project/contact-send";
+@use "object/project/blog-list";
+@use "object/project/blog-details";
+@use "object/project/search";
+@use "object/project/page-404";
 
-@import "object/project/result-list";
-@import "object/project/result-details";
-@import "object/project/pagination";
+@use "object/project/result-list";
+@use "object/project/result-details";
+@use "object/project/pagination";
 
 // Utility
-@import "object/utility/utility";
+@use "object/utility/utility";

@@ -1992,7 +1992,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 76.5333333333vw;
+    width: vw(287, 375);
     gap: 0.9rem;
   }
 }

@@ -1,6 +1,7 @@
+@use "../../foundation/variable" as vars;
 .plan__main {
     padding-bottom: 22.3rem;
-    @include sp {
+    @include vars.sp {
         padding-bottom: 18.3rem;
     }
 }
@@ -8,10 +9,10 @@
 .plan__main-price {
     margin-top: 7.3rem;
     h2 {
-        @include text-style(2.5rem, 1);
+        @include vars.text-style(2.5rem, 1);
     }
 
-    @include sp {     
+    @include vars.sp {     
         margin-top: 5.5rem;
     }
 }
@@ -26,9 +27,9 @@
     span {
         width: 1.85rem;
         height: 0.3rem;
-        background-color: $color-text;
+        background-color: vars.$color-text;
         position: relative;
-        @include sp {
+        @include vars.sp {
             margin-top: 0;
         }
 
@@ -39,12 +40,12 @@
             left: 50%;
             width: 100%;
             height: 100%;
-            background-color: $color-text;
+            background-color: vars.$color-text;
             transform: translate(-50%, -50%) rotate(90deg);
         }
     }
 
-    @include sp {
+    @include vars.sp {
         margin-top:4.5rem;
         flex-direction: column;
         gap: 2.8rem;
@@ -52,7 +53,7 @@
 }
 
 .price-system__btn {
-    @include text-style(2rem, calc(33/20));
+    @include vars.text-style(2rem, calc(33/20));
     width: 21rem;
     height: 6rem;
     display: flex;
@@ -63,14 +64,14 @@
 .plan__price-system-text {
     margin-top: 4.8rem;
     margin-left: -0.5rem;
-    @include sp {
+    @include vars.sp {
         margin-left: 0;
     }
     p {
-        @include text-style(1.8rem, calc(30/18));
+        @include vars.text-style(1.8rem, calc(30/18));
         font-weight: 500;
-        @include sp {
-            @include text-style(1.6rem, calc(30/16));
+        @include vars.sp {
+            @include vars.text-style(1.6rem, calc(30/16));
         }
     }
 }
@@ -79,47 +80,47 @@
 
 .plan__main-plan {
     margin-top: 6.7rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 3.7rem;
     }
     h2 {
-        @include text-style(2.5rem, 1);
-        @include sp {
-            @include text-style(2.5rem, calc(40/25));
+        @include vars.text-style(2.5rem, 1);
+        @include vars.sp {
+            @include vars.text-style(2.5rem, calc(40/25));
         }
     }
 
     h3 {
-        @include text-style(2.2rem, calc(33/20));
+        @include vars.text-style(2.2rem, calc(33/20));
     }
 
     h4 {
-        @include text-style(2rem, calc(33/20));
-        @include sp {
-            @include text-style(2rem, calc(25/20));
+        @include vars.text-style(2rem, calc(33/20));
+        @include vars.sp {
+            @include vars.text-style(2rem, calc(25/20));
         }
     }
 
     h5 {
-        @include text-style(1.7rem, calc(30/17));
-        @include sp {
-            @include text-style(1.6rem, calc(30/16));
+        @include vars.text-style(1.7rem, calc(30/17));
+        @include vars.sp {
+            @include vars.text-style(1.6rem, calc(30/16));
         }
     }
 
     h6 {
-        @include text-style(1.7rem, calc(25/17));
+        @include vars.text-style(1.7rem, calc(25/17));
         font-weight: 500;
-        @include sp {
-            @include text-style(1.6rem, calc(25/16));
+        @include vars.sp {
+            @include vars.text-style(1.6rem, calc(25/16));
         }
     }
 
     p {
-        @include text-style(1.7rem, calc(33/17));
+        @include vars.text-style(1.7rem, calc(33/17));
         font-weight: 500;
-        @include sp {
-            @include text-style(1.7rem, calc(25/17));
+        @include vars.sp {
+            @include vars.text-style(1.7rem, calc(25/17));
         }
     }
 }
@@ -131,7 +132,7 @@
     border-collapse: collapse;
     table-layout: fixed;
     margin-top: 5.5rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 0.2rem;
         // min-width: 67rem; // 4列 × 16.75rem = 67rem
     }
@@ -147,17 +148,17 @@
         // padding: 1rem 0.5rem;
         padding: 0.1rem;
         
-        @include sp {
+        @include vars.sp {
             width: 16.75rem;
             padding: 0.8rem 0.5rem;
         }
     }
     
-    @include sp {
+    @include vars.sp {
         margin-top: 1.3rem;
     }
 
-    @include sp-710 {
+    @include vars.sp-710 {
         grid-template-columns: repeat(4, 16.75rem);
     }
 }
@@ -173,11 +174,11 @@
     border:none;
 
 
-    @include sp {
+    @include vars.sp {
         height: 9rem;
     }
     span {
-        @include text-style(1.7rem, calc(33/17));
+        @include vars.text-style(1.7rem, calc(33/17));
     }
 }
 
@@ -186,7 +187,7 @@
     padding: 0.8rem 0.5rem 0.8rem 0.5rem;
     border:none;
 
-    @include sp {
+    @include vars.sp {
         height: 6.6rem;
         padding: 1rem 0.5rem 0.7rem 0.5rem;
     }
@@ -196,13 +197,13 @@
 .plan__plan-table-body {
     th,
     td {
-        border-right: 0.5px solid $color-text;
+        border-right: 0.5px solid vars.$color-text;
         text-align: center;
         vertical-align: middle;
         height: 8.5rem; 
         padding: 1rem 0.5rem;
         
-        @include sp {
+        @include vars.sp {
             width: 16.75rem;
             padding: 0.8rem 0.5rem;
         }
@@ -212,7 +213,7 @@
 .plan__table-title {
     text-align: left !important;
     padding-left: 2rem !important;
-    @include sp {
+    @include vars.sp {
         padding-left: 1rem !important;
     }   
 }
@@ -222,7 +223,7 @@
 .plan__table-title {
     text-align: left;
     padding: 1rem 0.5rem 1rem 2rem;
-    @include sp {
+    @include vars.sp {
         padding: 0.8rem 0.5rem 0.8rem 1rem;
     }
 }
@@ -270,18 +271,18 @@
 }
 
 .plan__table-ball-red {
-    background-color: $color-main;
+    background-color: vars.$color-main;
 }
 
 .plan__table-ball-black {
-    background-color: $color-text;
+    background-color: vars.$color-text;
 }
 
 
 // テーブルボディの境界線設定
 .plan__plan-table-body {
     tr:first-child th{
-        border-top: 0.5px solid $color-text;
+        border-top: 0.5px solid vars.$color-text;
     }
      
     th:last-child,
@@ -291,21 +292,21 @@
      
     tr:last-child th,
     tr:last-child td {
-        border-bottom: 0.5px solid $color-text;
+        border-bottom: 0.5px solid vars.$color-text;
     }
 }
 
 
 .plan__plan-plz-contact {
     margin-top: 1rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 1.9rem;
     }
     p {
-        @include text-style(1.7rem, calc(25/17));
+        @include vars.text-style(1.7rem, calc(25/17));
         font-weight: 500;
-        @include sp {
-            @include text-style(1.6rem, calc(30/16));
+        @include vars.sp {
+            @include vars.text-style(1.6rem, calc(30/16));
         }
     }
 }

@@ -1,3 +1,4 @@
+@use "../../foundation/variable" as vars;
 // お問い合わせボタンやホームへ戻るボタン
 // ブログや卒業実績で表示される「ギター」「集客方法」「ポップス」などのタグ
 // 下層ページの見出し部分やパンくずリスト
@@ -5,24 +6,24 @@
 // サイト内で2回以上使うパーツが該当
 
 .c-btn {
-    border: 0.1rem solid $color-main;
-    color: $color-white;
-    background-color: $color-main;
-    @include transition;
+    border: 0.1rem solid vars.$color-main;
+    color: vars.$color-white;
+    background-color: vars.$color-main;
+    @include vars.transition;
 }
 
 .c-bg-red {
-    background-color: $color-main;
-    color: $color-white;
+    background-color: vars.$color-main;
+    color: vars.$color-white;
 }
 
 .c-bg-black {
-    background-color: $color-black;
-    color: $color-white;
+    background-color: vars.$color-black;
+    color: vars.$color-white;
 }
 
 .c-font-red {
-    color: $color-main;
+    color: vars.$color-main;
 }
 
 .c-radius-red {
@@ -30,7 +31,7 @@
         content: '';
         width: 2rem;
         height: 2rem;
-        background-color: $color-main;
+        background-color: vars.$color-main;
         border-radius: 50%;
         position: absolute;
         z-index: 1;
@@ -65,7 +66,7 @@
 
         img {
             object-fit: cover;
-            // @include sp {
+            // @include vars.sp {
             //     aspect-ratio: 37.5 / 30;
             // }
         }
@@ -77,34 +78,34 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        @include text-style(2.5rem, calc(60/25));
-        color: $color-white;
+        @include vars.text-style(2.5rem, calc(60/25));
+        color: vars.$color-white;
     }
 }
 
 // パンクズ
 .c-band {
     width: 100%;
-    background-color: $color-band;
+    background-color: vars.$color-band;
     height: 5rem;
     display: flex;
     align-items: center;
 
-    @include sp {
+    @include vars.sp {
         height: 3.6rem;
         overflow-x: auto;
     }
 
     &-text {
-        @include text-style(1.6rem, calc(33/16));
+        @include vars.text-style(1.6rem, calc(33/16));
         line-height: 1.5;
         font-weight: 500;
-        color: $color-text;
+        color: vars.$color-text;
         height: inherit;
         display: flex;
         align-items: center;
         
-        @include pc {
+        @include vars.pc {
             display: -webkit-box;
             overflow: hidden;
             white-space: nowrap;
@@ -113,7 +114,7 @@
             text-overflow: ellipsis;
         }
 
-        @include sp {
+        @include vars.sp {
             line-height: 1.3;
             white-space: nowrap;
             flex-shrink: 0;
@@ -124,10 +125,10 @@
             display: inline-flex;
             align-items: center;
             height: inherit;
-            @include transition;
+            @include vars.transition;
 
             &:hover {
-                @include hover-opacity;
+                @include vars.hover-opacity;
             }
         }
 
@@ -143,7 +144,7 @@
         padding-inline: 3rem;
         overflow: hidden;
         
-        @include sp {
+        @include vars.sp {
             padding-inline: 0;
             margin: 0 2rem;
             overflow-x: auto;
@@ -163,14 +164,14 @@
     position: relative;
 }
 .c-category {
-    border: 0.1rem solid $color-main;
-    color: $color-white;
-    background-color: $color-main;
+    border: 0.1rem solid vars.$color-main;
+    color: vars.$color-white;
+    background-color: vars.$color-main;
     text-align: center;
     position: absolute;
     top: 0;
     left: 0;
-    @include text-style(1.5rem, calc(25/15));
+    @include vars.text-style(1.5rem, calc(25/15));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,14 +182,14 @@
 
 .c-category__top-blog {
     min-width: 8rem;
-    @include sp {
+    @include vars.sp {
         width: 9rem;
     }
 }
 
 .c-category__blog-list {
     min-width: 8rem;
-    @include sp {
+    @include vars.sp {
         min-width: 9rem;
     }
 }
@@ -199,21 +200,21 @@
 
 .c-category__blog-details-main {
     min-width: 8rem;
-    @include sp {
+    @include vars.sp {
         min-width: 9rem;
     }
 }
 
 .c-category__search {
     min-width: 8rem;
-    @include sp {
+    @include vars.sp {
         min-width: 9rem;
     }
 }
 
 .c-category__result-list {
     min-width: 10rem;
-    @include sp {
+    @include vars.sp {
         min-width: 9rem;
     }
 }
@@ -224,7 +225,7 @@
 
 .c-category__result-details{
     min-width: 10rem;
-    @include sp {
+    @include vars.sp {
         min-width: 8rem;
     }
 }
@@ -239,11 +240,11 @@
     align-items: center;
     justify-content: center;
     
-    @include sp {
+    @include vars.sp {
         width: 100%;
     }
 
     h2 {
-        @include text-style(1.8rem, calc(33/18));
+        @include vars.text-style(1.8rem, calc(33/18));
     }
 }

@@ -1,7 +1,8 @@
+@use "../../foundation/variable" as vars;
 .result-details-content {
     padding-top: 7rem;
     padding-bottom: 15.7rem;
-    @include sp {
+    @include vars.sp {
         padding-top: 5.1rem;
         padding-bottom: 19.6rem;
     }
@@ -15,7 +16,7 @@
     img {
         aspect-ratio: 88 / 40;
         object-fit: cover;
-        @include sp {
+        @include vars.sp {
             aspect-ratio: 33.5 / 23.6;
         }
     }
@@ -23,21 +24,21 @@
 
 .result-main__card-text {
     h1 {
-        @include text-style(2.5rem, calc(40/25));
+        @include vars.text-style(2.5rem, calc(40/25));
         margin-top: 5rem;
 
-        @include sp {
-            @include text-style(2rem, calc(30/20));
+        @include vars.sp {
+            @include vars.text-style(2rem, calc(30/20));
             margin-top: 3rem;
         }
     }
 
     time {
         display: block;
-        @include text-style(1.7rem, calc(30/17));
+        @include vars.text-style(1.7rem, calc(30/17));
         font-weight: 500;
         margin-top: 1.3rem;
-        @include sp {
+        @include vars.sp {
             margin-top: 0.3rem;
             padding-left: 0;
         }
@@ -45,7 +46,7 @@
 
     span {
         display: inline-block;
-        @include sp {
+        @include vars.sp {
             display: none;
         }
     }
@@ -56,7 +57,7 @@
     height: 3rem;
     line-height: 3rem;
     text-align: center;
-    @include text-style(1.5rem, calc(25/15));
+    @include vars.text-style(1.5rem, calc(25/15));
     padding-top: 0.2rem;
 }
 
@@ -66,7 +67,7 @@
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    @include sp {
+    @include vars.sp {
         flex-direction: column;
         gap: 0;
         margin-top: 2.3rem;
@@ -78,19 +79,19 @@
     border-collapse: collapse;
     table-layout: fixed;
 
-    @include sp {
+    @include vars.sp {
         width: 33.5rem;   
     }
 
     th,
     td {
         padding: 0.38rem 0 0.38rem 2rem;
-        @include text-style(1.8rem, calc(30/18));
+        @include vars.text-style(1.8rem, calc(30/18));
         border: 0.5px solid #707070;
         text-align: left;
         vertical-align: middle;
         
-        @include sp {
+        @include vars.sp {
             padding-left: 1rem;
         }
     }
@@ -98,7 +99,7 @@
     th {
         width: 14rem;
         
-        @include sp {
+        @include vars.sp {
             width: 12rem;
         }
     }
@@ -117,14 +118,14 @@
 .result__profile__text {
     flex: 1;
     padding-right: 1rem;
-    @include sp {
+    @include vars.sp {
         width: 100%;
     }
 
     p {
-        @include text-style(1.8rem, calc(30/18));
+        @include vars.text-style(1.8rem, calc(30/18));
         font-weight: 500;
-        @include sp {
+        @include vars.sp {
             margin-top: 2.8rem;
         }
     }
@@ -135,7 +136,7 @@
 .result-before-after {
     margin-top: 6rem;
     gap: 20rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 4rem;
         gap: 2.2rem;
     }
@@ -144,15 +145,15 @@
 // article--------------------------------
 .result-details-main__article {
     margin-top: 10rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 6rem;
     }
 }
 
 .result__article-title {
-    @include text-style(1.8rem, calc(33/18));
+    @include vars.text-style(1.8rem, calc(33/18));
     padding: 0.9rem 0 0.8rem 3rem;
-    @include sp {
+    @include vars.sp {
         text-align: center;
         padding: 1rem 0;
     }
@@ -164,7 +165,7 @@
     flex-direction: column;
     gap: 3rem;
 
-    @include sp {
+    @include vars.sp {
         margin-top: 1.9rem;
         gap: 2rem;
     }
@@ -174,24 +175,24 @@
 .result__article-items-card {
     display: flex;
     gap: 3rem;
-    @include sp {
+    @include vars.sp {
         gap: 2rem;
     }
     &:hover {
-        @include hover-opacity;
+        @include vars.hover-opacity;
     }
 
 }
 
 .result-article__card-image {
     width: 26rem;
-    @include sp {
+    @include vars.sp {
         width: 16rem;
     }
     img {
         aspect-ratio: 26 / 18.3;
         object-fit: cover;
-        @include sp {
+        @include vars.sp {
             aspect-ratio: 16 / 11.3;
         }
     }
@@ -200,16 +201,16 @@
 .result-article__card-text {
     flex: 1;
     h3 {
-        @include text-style(2rem, calc(25/20));
+        @include vars.text-style(2rem, calc(25/20));
         display: -webkit-box;
         -webkit-line-clamp: 2; 
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        @include sp {
-            @include text-style(1.7rem, calc(28/17));
+        @include vars.sp {
+            @include vars.text-style(1.7rem, calc(28/17));
             margin-top: 0.8rem;
-            @include sp {
+            @include vars.sp {
                 margin-top: 0;
             }
         }
@@ -217,11 +218,11 @@
 
     time {
         display: block;
-        @include text-style(1.7rem, calc(30/17));
+        @include vars.text-style(1.7rem, calc(30/17));
         font-weight: 500;
         margin-top: 1.3rem;
         padding-left: 0.5rem;
-        @include sp {
+        @include vars.sp {
             margin-top: 0.3rem;
             padding-left: 0;
         }
@@ -229,7 +230,7 @@
 
     span {
         display: inline;
-        @include sp {
+        @include vars.sp {
             display: none;
         }
     }

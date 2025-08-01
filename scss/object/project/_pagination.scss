@@ -1,8 +1,9 @@
+@use "../../foundation/variable" as vars;
 // pagination
 .pagination {
     display: flex;
     justify-content: center;
-    @include text-style(1.8rem, calc(30/18));
+    @include vars.text-style(1.8rem, calc(30/18));
     
   
     &-list {
@@ -10,7 +11,7 @@
       gap: 1rem;
       list-style: none;
       align-items: center;
-      @include sp {
+      @include vars.sp {
         gap: 0.5rem;
       }
     }
@@ -22,32 +23,32 @@
         height: 5rem;
         line-height: 5rem;
         text-align: center;
-        border: 1px solid $color-text;
+        border: 1px solid vars.$color-text;
         text-decoration: none;
         transition: 0.3s;
-        @include sp {
+        @include vars.sp {
             width: 4.4rem;
             height: 4.4rem;
             line-height: 4.4rem;
         }
   
         &:hover {
-          background-color: $color-text;
-          color: $color-white;
+          background-color: vars.$color-text;
+          color: vars.$color-white;
           opacity: 1 !important; 
         }
       }
   
       &.is-current a {
-        background-color: $color-text;
-        color: $color-white;
-        border-color: $color-text;
+        background-color: vars.$color-text;
+        color: vars.$color-white;
+        border-color: vars.$color-text;
       }
     }
   
     &-dots {
       padding-inline: 1rem;
-      @include sp {
+      @include vars.sp {
         padding-inline: 0.6rem;
       }
     }
@@ -56,7 +57,7 @@
 // ブログ一覧
 .blog-blog-list__pagination {
     margin-top: 7rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 6rem;
     }
 }
@@ -64,7 +65,7 @@
 // 卒業実績一覧
 .result-list__pagination {
     margin-top: 7.5rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 5.8rem;
     }
 }
@@ -74,7 +75,7 @@
 .search__pagination {
     margin-top: 7rem;
     margin-bottom: 14.8rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 6rem;
         margin-bottom: 14.5rem;
     }

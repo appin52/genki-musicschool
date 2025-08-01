@@ -1,7 +1,8 @@
+@use "../../foundation/variable" as vars;
 .search__main {
     padding-top: 6.6rem;
     padding-bottom: 6rem;
-    @include sp {
+    @include vars.sp {
         padding-top: 3.6rem;
         padding-bottom: 5.7rem;
     }
@@ -13,10 +14,10 @@
     align-items: center;
    
     h1,p { 
-        @include text-style(1.8rem, calc(30/18));
+        @include vars.text-style(1.8rem, calc(30/18));
         font-weight: 500;
         span {
-            color: $color-text;
+            color: vars.$color-text;
             font-weight: 700;
         }
     }
@@ -32,7 +33,7 @@
     display: flex;
     flex-direction: column;
     gap: 7rem;
-    @include sp {
+    @include vars.sp {
         gap: 4rem;
     }
 }
@@ -42,19 +43,19 @@
     display: flex;
     gap: 5rem;
    
-    @include transition;
-    @include sp {
+    @include vars.transition;
+    @include vars.sp {
         flex-direction: column;
         gap: 0;
     }
     &:hover {
-        @include hover-opacity;
+        @include vars.hover-opacity;
     }
 }
 
 .search__card-image {
     width: 26rem;
-    @include sp {
+    @include vars.sp {
         width: 100%;
     }
     picture {
@@ -65,7 +66,7 @@
         aspect-ratio: 26/18.4;
         object-fit: cover;
         display: block;
-        @include sp {
+        @include vars.sp {
             aspect-ratio: 33.5/20;
         }
     }
@@ -77,29 +78,29 @@
  
 
     
-    @include sp {
+    @include vars.sp {
         width: 100%;
     }
     h3 {
-        @include text-style(2rem, calc(25/20));
+        @include vars.text-style(2rem, calc(25/20));
         margin-top: -0.1rem;
-        @include sp {
-            @include text-style(2rem, calc(30/20));
+        @include vars.sp {
+            @include vars.text-style(2rem, calc(30/20));
             margin-top: 3rem;
         }
     }
     time {
         display: block;
-        @include text-style(1.7rem, calc(30/17));
+        @include vars.text-style(1.7rem, calc(30/17));
         font-weight: 500;
         margin-top: 0.3rem;
-        @include sp {
+        @include vars.sp {
             text-align: right;
             margin-top: 0.4rem;
         }
     }
     p {
-        @include text-style(1.8rem, calc(30/18));
+        @include vars.text-style(1.8rem, calc(30/18));
         font-weight: 500;
         margin-top: 1rem;
         display: -webkit-box;
@@ -107,16 +108,16 @@
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        @include sp {
+        @include vars.sp {
             margin-top: 0.9rem;
-            @include text-style(1.6rem, calc(30/16));
+            @include vars.text-style(1.6rem, calc(30/16));
         }
     }
 
     span {
         display: inline-block;
 
-        @include sp {
+        @include vars.sp {
             display: none;
         }
     }
@@ -124,7 +125,7 @@
 
 .search__negative-margin {
     margin-bottom: -0.5rem;
-    @include sp {
+    @include vars.sp {
         margin-bottom: 0;
     }
 }

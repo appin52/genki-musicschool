@@ -1,6 +1,7 @@
+@use "../../foundation/variable" as vars;
 .top__voice {
     padding: 4.4rem 0 8rem;
-    @include sp {
+    @include vars.sp {
         padding: 4.5rem 0 1.5rem;
     }
 }
@@ -10,25 +11,25 @@
     padding-inline: 5rem;
     margin: 0 auto;
 
-    @include pc-768-1000 {
+    @include vars.pc-768-1000 {
         padding-inline: 7rem;
     }
 
-    @include sp {
+    @include vars.sp {
         padding-inline: 2rem;
     }
 }
 
 .voice__title {
-    @include text-style(3rem, calc(50/30));
-    @include sp {
-        @include text-style(2.5rem, calc(40/25));
+    @include vars.text-style(3rem, calc(50/30));
+    @include vars.sp {
+        @include vars.text-style(2.5rem, calc(40/25));
     }
 }
 
 .voice__box {
     margin-top: 3.6rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 4rem;
     }
 }
@@ -37,9 +38,9 @@
     width: 27rem;
     display: block;
     color: inherit;
-    @include transition;
+    @include vars.transition;
 
-    @include sp {
+    @include vars.sp {
         width: 100%;
     }
     
@@ -47,16 +48,16 @@
         .voice__card-image {
             overflow: hidden;
             img {
-                @include hover-bigger;
-                @include transition;
+                @include vars.hover-bigger;
+                @include vars.transition;
 
 
             }
         }
         .voice__card-text {
             h3,p {
-                @include hover-opacity;
-                @include transition;
+                @include vars.hover-opacity;
+                @include vars.transition;
             }
         }
     }
@@ -66,15 +67,15 @@
     overflow: hidden;
 
     img {
-        @include transition;
+        @include vars.transition;
         object-fit: cover;
     }
 }
 
 .voice__card-text {
     h3 {
-        @include text-style(2.2rem, calc(33/22));
-        @include transition;
+        @include vars.text-style(2.2rem, calc(33/22));
+        @include vars.transition;
         margin-top: 1.7rem;
         display: -webkit-box;
 
@@ -83,14 +84,14 @@
         text-overflow: ellipsis;
         -webkit-line-clamp: 1; 
         
-        @include sp {
+        @include vars.sp {
             margin-top: 2.7rem;
         }
     }
 
     p {
-        @include transition;
-        @include text-style(1.8rem, calc(30/18));
+        @include vars.transition;
+        @include vars.text-style(1.8rem, calc(30/18));
         font-weight: 500;
         margin-top: 1rem;
         margin-right: 0;

@@ -1,8 +1,9 @@
+@use "../../foundation/variable" as vars;
 イレギュラーなパターンのみ
 
 .u-upper-arrow-contact {
     right: 10.2rem;
-    @include sp{
+    @include vars.sp{
         right:5rem !important;
     }
 }
@@ -10,7 +11,7 @@
 .u-plan-p {
     padding: 0.8rem 0.5rem 0.5rem 0.5rem;
 
-    @include sp {
+    @include vars.sp {
         padding: 1rem 0.5rem 0.5rem 0.5rem;
     }
 
