@@ -633,7 +633,6 @@
     @include vars.transition;
     @include vars.text-style(1.7rem, calc(28/17));
     font-weight: 500;
-    // position: relative;
     border-bottom: 0.5px solid vars.$color-text;
 
     a {
