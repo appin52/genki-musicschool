@@ -1992,7 +1992,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 76.5333333333vw;
+    width: vw(287, 375);
     gap: 0.9rem;
   }
 }
@@ -3927,11 +3927,13 @@ footer {
   font-size: 1.7rem;
   line-height: 1.6470588235;
   font-weight: 500;
-  padding-top: 0.95rem;
-  padding-bottom: 0.95rem;
   border-bottom: 0.5px solid #000000;
 }
-.blog-details-side__category__box-item a:hover .category-item__text {
+.blog-details-side__category__box-item a {
+  padding-top: 0.95rem;
+  padding-bottom: 0.95rem;
+}
+.blog-details-side__category__box-item a:hover {
   opacity: 0.5;
 }
 

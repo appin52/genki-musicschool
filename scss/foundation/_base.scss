@@ -1,4 +1,5 @@
 // サイト内の共通設定------------------------------------
+@use "variable" as vars;
 
 html {
     //375px~767px
@@ -18,8 +19,8 @@ html {
 
 body{
     font-weight: 700;
-    color: $color-text;
-    font-family: $font-family-base;
+    color: vars.$color-text;
+    font-family: vars.$font-family-base;
 }
 
 h1,h2,h3,h4,label,input,a,ul,li {
@@ -28,7 +29,7 @@ h1,h2,h3,h4,label,input,a,ul,li {
 
 .header-padding{
     padding-top: 8rem;
-    @include sp {
+    @include vars.sp {
         padding-top: 5rem;
     }
 }
@@ -42,12 +43,12 @@ img {
     max-width: 94rem;
     padding-inline: 3rem;
     margin: 0 auto;
-    @include sp {
+    @include vars.sp {
         padding-inline: 2rem;
     }
 }
 
-@include pc{
+@include vars.pc{
     .pc_none{
         display: none;
     }
@@ -57,7 +58,7 @@ img {
 }
 
 
-@include sp{
+@include vars.sp{
     .sp_none{
         display: none;
     }
@@ -77,7 +78,7 @@ img {
 // 基本的なaタグの設定------------------------------------
 a {
     text-decoration: none;
-    @include transition;
+    @include vars.transition;
 }
 
 // お問い合わせボタン------------------------------------
@@ -93,7 +94,7 @@ a {
     bottom: 0;
     right: 0;
     z-index: 999;
-    @include sp {
+    @include vars.sp {
         text-align: center;
         left: 50%;
         right: auto;
@@ -109,16 +110,16 @@ a {
 }
 
 .btn-contact {
-    @include text-style(2rem, calc(33/20));
+    @include vars.text-style(2rem, calc(33/20));
     letter-spacing: 0.2em;
     padding: 1.6rem 7.6rem 1.2rem;
     display: inline-block;
-    @include sp {
+    @include vars.sp {
         padding: 1.3rem 9.6rem 0.8rem;
     }
     &:hover {
-        @include hover-reversecolor;
-        border: 0.1rem solid $color-main;
+        @include vars.hover-reversecolor;
+        border: 0.1rem solid vars.$color-main;
         border-bottom: none;
     }
 }
@@ -178,13 +179,13 @@ a {
     transform: translateY(-50%);
     z-index: 999;
     cursor: pointer;
-    @include transition;
+    @include vars.transition;
 
-    @include sp {
+    @include vars.sp {
         top: 41%;
     }
     &:hover {
-        @include transition;
+        @include vars.transition;
         cursor: pointer;
         transform: translateY(-50%) scale(1.3);
     }
@@ -193,7 +194,7 @@ a {
 .slick-prev {
     left: -5.5rem;
 
-    @include sp {
+    @include vars.sp {
         left: 0.5rem;
     }
 }
@@ -202,7 +203,7 @@ a {
     right: -5.5rem;
 
     
-    @include sp {
+    @include vars.sp {
         right: 0.5rem;
     }
 }
@@ -219,10 +220,10 @@ a {
     flex-direction: column;
     gap: 1.6rem;
     flex: 1;
-    @include transition;
+    @include vars.transition;
 
     &:hover {
-        @include hover-opacity;
+        @include vars.hover-opacity;
     }
 }
 
@@ -230,7 +231,7 @@ a {
     padding-top: 0.4rem;
     padding-bottom: 0.3rem;
     p{
-        @include text-style(1.7rem, calc(30/17));
+        @include vars.text-style(1.7rem, calc(30/17));
         font-weight: 500;
     }
 }
@@ -255,13 +256,13 @@ a {
     &-text {
         flex: 1;
         p {
-            @include text-style(1.6rem, calc(25/16));
+            @include vars.text-style(1.6rem, calc(25/16));
             display: -webkit-box;
             -webkit-line-clamp: 3; 
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
-            @include sp {
+            @include vars.sp {
                 -webkit-line-clamp: 3;
             }
         }

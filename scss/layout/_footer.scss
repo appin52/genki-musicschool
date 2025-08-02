@@ -1,6 +1,8 @@
+@use "../foundation/variable" as vars;
+
 footer {
     padding: 3.5rem 0 4rem;
-    @include sp {
+    @include vars.sp {
         padding: 3.8rem 0 5.5rem;
     }
 }
@@ -8,9 +10,9 @@ footer {
 .footer__nav {
     display: flex;
     justify-content: center;
-    @include text-style(1.7rem, calc(33/17));
-    @include sp {
-        @include text-style(1.6rem, calc(30/16));
+    @include vars.text-style(1.7rem, calc(33/17));
+    @include vars.sp {
+        @include vars.text-style(1.6rem, calc(30/16));
     }
 }
 
@@ -21,10 +23,10 @@ footer {
 
     a {
         padding: 1rem;
-        @include transition;
+        @include vars.transition;
         
         &:hover {
-            @include hover-opacity;
+            @include vars.hover-opacity;
         }
     }
 }
@@ -35,23 +37,23 @@ footer {
     width: 4.2rem;
     display: inline-block;
     padding: 0.5rem;
-    @include transition;
-    @include sp {
+    @include vars.transition;
+    @include vars.sp {
         margin-top: 0.7rem;
     }
     &:hover {
-        @include hover-opacity;
+        @include vars.hover-opacity;
     }
 }
 
 .footer__copyright {
     margin-top: 1.5rem;
     margin-bottom: -0.5rem;
-    @include text-style(1.5rem, calc(33/15));
+    @include vars.text-style(1.5rem, calc(33/15));
     font-weight: 500;
-    @include sp {
+    @include vars.sp {
         margin-top: 2.0rem;
-        @include text-style(1.5rem, calc(20/15));
+        @include vars.text-style(1.5rem, calc(20/15));
     }
 }
 
@@ -60,10 +62,10 @@ footer {
     justify-content: center;
 
 
-    @include sp {
+    @include vars.sp {
         gap: 2.5rem;
     }
-    @include sp {
+    @include vars.sp {
         margin-top: 1.5rem;
     }
 }
@@ -78,10 +80,10 @@ footer {
 
         a {
             padding:0.5rem;
-            @include transition;
+            @include vars.transition;
             
             &:hover {
-                @include hover-opacity;
+                @include vars.hover-opacity;
             }
         }
     

@@ -1,14 +1,15 @@
+@use "../../foundation/variable" as vars;
 .top__flow {
     padding: 3.4rem 0 8.3rem;
-    @include sp {
+    @include vars.sp {
         padding: 4.5rem 0 5rem;
     }
 }
 
 .flow__title {
-    @include text-style(3rem, calc(50/30));
-    @include sp {
-        @include text-style(2.5rem, calc(40/25));
+    @include vars.text-style(3rem, calc(50/30));
+    @include vars.sp {
+        @include vars.text-style(2.5rem, calc(40/25));
     }
 }
 
@@ -17,7 +18,7 @@
     position: relative;
     padding-left: 8rem;
     gap:4.3rem;
-    @include sp {
+    @include vars.sp {
         gap: 1.3rem;
         padding-left: 3.5rem;
     }
@@ -30,12 +31,12 @@
         top: 6rem;
         left: 6.1rem;
         height: 90%;
-        background-color: $color-main;
+        background-color: vars.$color-main;
         width: 0.3rem;
 
 
 
-        @include sp {
+        @include vars.sp {
             top: 5rem;
             left: 1.6rem;
             height: 91%;
@@ -53,7 +54,7 @@
             transform: rotate(45deg);
             width: 0.3rem;
             height: 2.5rem;
-            background-color: $color-main;
+            background-color: vars.$color-main;
         }
     
         &::after {
@@ -64,7 +65,7 @@
             transform: rotate(-45deg);
             width: 0.3rem;
             height: 2.5rem;
-            background-color: $color-main;
+            background-color: vars.$color-main;
         }
     }
 }
@@ -74,7 +75,7 @@
     flex-direction: column;
     gap: 5.8rem;
     margin-top: 5.3rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 3.8rem;
         gap: 3.6rem;
     }
@@ -85,21 +86,21 @@
     align-items: start;
     width: 76rem;
     position: relative;
-    @include sp {
+    @include vars.sp {
         flex-direction: column;
         width: vw(287, 375);
         gap: 0.9rem;
     }
 
     h3 {
-        @include text-style(2.2rem, calc(33/22));
+        @include vars.text-style(2.2rem, calc(33/22));
     }
 
     p {
-        @include text-style(1.8rem, calc(30/18));
+        @include vars.text-style(1.8rem, calc(30/18));
         font-weight: 500;
-        @include sp {
-            @include text-style(1.6rem, calc(30/16));
+        @include vars.sp {
+            @include vars.text-style(1.6rem, calc(30/16));
         }
     }
 }
@@ -109,7 +110,7 @@
         position: absolute;
         top: 0.6rem;
         left: -7rem;
-        @include sp {
+        @include vars.sp {
             left: -4rem;
         }
     }
@@ -117,14 +118,14 @@
 
 .flow__card-title {
     width: 19rem;
-    @include sp {
+    @include vars.sp {
         width: 100%;
     }
 }
 
 .flow__card-text {
     flex: 1;
-    @include sp {
+    @include vars.sp {
         width: 100%;
     }
 }

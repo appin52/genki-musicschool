@@ -1,3 +1,4 @@
+@use "../../foundation/variable" as vars;
 // 枠組み
 
 .blog-details-content {
@@ -5,7 +6,7 @@
     gap: 3rem;
     padding-top: 7rem;
     padding-bottom: 19rem;
-    @include sp {
+    @include vars.sp {
         flex-direction: column;
         padding-top: 5rem;
         padding-bottom:19.5rem;
@@ -15,14 +16,14 @@
 
 .blog-details-main {
     width: 60rem;
-    @include sp {
+    @include vars.sp {
         width: 100%;
     }
 }
 
 .blog-details-side {
     flex: 1;
-    @include sp {
+    @include vars.sp {
         width: 100%;
     }
 }
@@ -38,7 +39,7 @@
     img {
         object-fit: cover;
         aspect-ratio: 60 / 35;
-        @include sp {
+        @include vars.sp {
             aspect-ratio: 33.5 / 20;
         }
     }
@@ -46,21 +47,21 @@
 
 .blog-details-main__card-text{
     h1 {
-        @include text-style(2.5rem, calc(40/25));
+        @include vars.text-style(2.5rem, calc(40/25));
         margin-top: 5.4rem;
         line-height: 1;
-        @include sp {
-            @include text-style(2rem, calc(30/20));
+        @include vars.sp {
+            @include vars.text-style(2rem, calc(30/20));
             margin-top: 3rem;
             margin-right: -0.3rem;
         }
     }
     time {
         display: block;
-        @include text-style(1.7rem, calc(30/17));
+        @include vars.text-style(1.7rem, calc(30/17));
         font-weight: 500;
         margin-top: 1.3rem;
-        @include sp {
+        @include vars.sp {
             margin-top: 0.6rem;
         }   
     }
@@ -78,14 +79,14 @@
     align-items: center;
     gap: 0.4rem;
     margin-top: 2rem;
-    @include sp {
+    @include vars.sp {
         gap: 0.2rem;
     }
 
     a {
-        @include transition;
+        @include vars.transition;
         &:hover {
-            @include hover-opacity;
+            @include vars.hover-opacity;
         }
     }
 }
@@ -98,12 +99,12 @@
 }
 
 .blog__sns__icon-text {
-    @include text-style(1rem, calc(33/10));
-    color: $color-white;
+    @include vars.text-style(1rem, calc(33/10));
+    color: vars.$color-white;
 }
 
 .blog__sns-box-facebook {
-    background-color: $color-facebook;
+    background-color: vars.$color-facebook;
     padding: 0.4rem 1.6rem;
 
     p {
@@ -112,7 +113,7 @@
 }
 
 .blog__sns-box-twitter {
-    background-color: $color-twitter;
+    background-color: vars.$color-twitter;
     padding: 0.4rem 1.3rem 0.4rem 1.4rem;
 
     p {
@@ -121,7 +122,7 @@
 }
 
 .blog__sns-box-hatena {
-    background-color: $color-hatena;
+    background-color: vars.$color-hatena;
     padding: 0.4rem 1.3rem 0.4rem 1.3rem;
 
     p {
@@ -130,7 +131,7 @@
 }
 
 .blog__sns-box-line {
-    background-color: $color-line;
+    background-color: vars.$color-line;
     padding: 0.4rem 1.7rem 0.4rem 1.4rem;
 
     p {
@@ -139,7 +140,7 @@
 }
 
 .blog__sns-box-pocket {
-    background-color: $color-pocket;
+    background-color: vars.$color-pocket;
     padding: 0.4rem 1.3rem 0.4rem 1.3rem;
 
     p {
@@ -153,7 +154,7 @@
 .blog__sns-box-hatena,
 .blog__sns-box-line,
 .blog__sns-box-pocket {
-    @include sp {
+    @include vars.sp {
         padding: 0;
         width: 6.5rem;
         height: 4rem;
@@ -167,11 +168,11 @@
 
 // text --------------------------------
 .blog-details-main__text-p1 {
-    @include text-style(1.8rem, calc(30/18));
+    @include vars.text-style(1.8rem, calc(30/18));
     font-weight: 500;
     margin-top: 4.8rem;
-    @include sp {
-    @include text-style(1.6rem, calc(30/16));
+    @include vars.sp {
+    @include vars.text-style(1.6rem, calc(30/16));
         margin-top: 2.9rem;
     }
 
@@ -181,20 +182,20 @@
 }
 
 .blog-details-main__text-h2 {
-    @include text-style(2rem, calc(40/20));
+    @include vars.text-style(2rem, calc(40/20));
     margin-top: 3.3rem;
-    @include sp {
-        @include text-style(2rem, calc(30/20));
+    @include vars.sp {
+        @include vars.text-style(2rem, calc(30/20));
         margin-top: 4rem;
     }
 }
 
 .blog-details-main__text-p2 {
-    @include text-style(1.8rem, calc(30/18));
+    @include vars.text-style(1.8rem, calc(30/18));
     font-weight: 500;
     margin-top: 1.5rem;
-    @include sp {
-        @include text-style(1.6rem, calc(30/16));
+    @include vars.sp {
+        @include vars.text-style(1.6rem, calc(30/16));
         margin-top: 1.7rem;
     }
 
@@ -211,7 +212,7 @@
         aspect-ratio: 33.5 / 20;
         object-fit: cover;
     }
-    @include sp {
+    @include vars.sp {
         margin-top: 4rem;
     }
 }
@@ -219,10 +220,10 @@
 // list --------------------------------
 .blog-details-main__list {
     margin-top: 2.8rem;
-    @include text-style(1.8rem, calc(30/18));
+    @include vars.text-style(1.8rem, calc(30/18));
     font-weight: 500;
-    @include sp {
-        @include text-style(1.6rem, calc(30/16));
+    @include vars.sp {
+        @include vars.text-style(1.6rem, calc(30/16));
         margin-top: 2.7rem;
     }
 }
@@ -230,8 +231,8 @@
 // border --------------------------------
 .blog-details-main__border {
     margin-top: 4rem;
-    border-top: 0.5px solid $color-text;
-    @include sp {
+    border-top: 0.5px solid vars.$color-text;
+    @include vars.sp {
         margin-top: 3.8rem;
     }
 }
@@ -241,10 +242,10 @@
     margin-top: 4.3rem;
     position: relative;
     padding-left: 1rem;
-    @include text-style(2rem, calc(40/20));
-    @include sp {
+    @include vars.text-style(2rem, calc(40/20));
+    @include vars.sp {
         margin-top: 5rem;
-        @include text-style(2rem, calc(30/20));
+        @include vars.text-style(2rem, calc(30/20));
     }
 
     &::before {
@@ -256,9 +257,9 @@
         display: block;
         width: 0.3rem;
         height: 2rem;
-        background-color: $color-text;
+        background-color: vars.$color-text;
 
-        @include sp {
+        @include vars.sp {
             height: 5rem;
         }
     }
@@ -267,14 +268,14 @@
 // callout-box--------------------------------
 .blog-details-main__callout-box {
     margin-top: 1.7rem;
-    background-color: $color-band;
+    background-color: vars.$color-band;
     position: relative;
     p {
-        @include text-style(1.8rem, calc(30/18));
+        @include vars.text-style(1.8rem, calc(30/18));
         font-weight: 500;
         padding: 1.8rem 3rem 1rem 6.7rem;
-        @include sp {
-            @include text-style(1.6rem, calc(30/16));
+        @include vars.sp {
+            @include vars.text-style(1.6rem, calc(30/16));
             padding: 1.7rem 2rem 1rem 7rem;
         }
     }
@@ -286,7 +287,7 @@
     top: 2rem;
     left: 3rem;
 
-    @include sp {
+    @include vars.sp {
         top: 2.1rem;
         left: 2.5rem;
     }
@@ -299,17 +300,17 @@
 // textlink--------------------------------
 .blog-details-main__text-link {
     margin-top: 3.4rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 3.7rem;
     }
 
     a {
-        @include text-style(2rem, calc(33/20));
+        @include vars.text-style(2rem, calc(33/20));
         line-height: 1;
         display: inline-block;
-        @include transition;
+        @include vars.transition;
         &:hover {
-            @include hover-opacity;
+            @include vars.hover-opacity;
         }
 
         &::after {
@@ -317,7 +318,7 @@
             display: block;
             width: 100%;
             height: 1px;
-            background-color: $color-main;
+            background-color: vars.$color-main;
         }
     }
 
@@ -327,7 +328,7 @@
 .blog-before-after {
     margin-top: 5.7rem;
     gap: 8rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 4.8rem;
         gap: 2.2rem;
 
@@ -338,16 +339,16 @@
 .blog-details-main__article {
     margin-top: 9.5rem;
 
-    @include sp {
+    @include vars.sp {
         margin-top: 6.1rem;
 
     }
 }
 
 .blog__main__article-title {
-    @include text-style(1.8rem, calc(33/18));
+    @include vars.text-style(1.8rem, calc(33/18));
     padding: 0.9rem 0 0.8rem 3rem;
-    @include sp {
+    @include vars.sp {
         text-align: center;
         padding: 1rem 0;
     }
@@ -359,7 +360,7 @@
     flex-direction: column;
     gap: 3rem;
 
-    @include sp {
+    @include vars.sp {
         margin-top: 1.9rem;
         gap: 2rem;
     }
@@ -371,25 +372,25 @@
     gap: 3rem;
     color: inherit;
     text-decoration: none;
-    @include transition;
-    @include sp {
+    @include vars.transition;
+    @include vars.sp {
         gap: 2rem;
     }
     
     &:hover {
-        @include hover-opacity;
+        @include vars.hover-opacity;
     }
 }
 
 .blog-article__card-image {
     width: 20rem;
-    @include sp {
+    @include vars.sp {
         width: 16rem;
     }
     img {
         aspect-ratio: 20 / 14;
         object-fit: cover;
-        @include sp {
+        @include vars.sp {
             aspect-ratio: 16 / 11;
         }
     }
@@ -398,21 +399,21 @@
 .blog-article__card-text {
     flex: 1;
     h3 {
-        @include text-style(2rem, calc(25/20));
+        @include vars.text-style(2rem, calc(25/20));
         display: -webkit-box;
         -webkit-line-clamp: 2; 
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
 
-        @include sp {
-            @include text-style(1.7rem, calc(28/17));
+        @include vars.sp {
+            @include vars.text-style(1.7rem, calc(28/17));
             margin-top: 0.8rem;
         }
 
         span {
             display: inline;
-            @include sp {
+            @include vars.sp {
                 display: none;
             }
         }
@@ -420,11 +421,11 @@
 
     time {
         display: block;
-        @include text-style(1.7rem, calc(30/17));
+        @include vars.text-style(1.7rem, calc(30/17));
         font-weight: 500;
         margin-top: 1.3rem;
         padding-left: 0.5rem;
-        @include sp {
+        @include vars.sp {
             margin-top: 0.3rem;
             padding-left: 0;
         }
@@ -438,7 +439,7 @@
     height: 3rem;
     line-height: 3rem;
     text-align: center;
-    @include text-style(1.5rem, calc(25/15));
+    @include vars.text-style(1.5rem, calc(25/15));
     padding-top: 0.2rem;
 
 }
@@ -450,7 +451,7 @@
 
 // 無料メールマガジン 
 .blog-details-side__free__magazine-box {
-    border: 0.5px solid $color-text;
+    border: 0.5px solid vars.$color-text;
     width: 100%;
     height: 20rem;
     display: flex;
@@ -458,19 +459,19 @@
     justify-content: center;
     position: relative;
 
-    @include sp {
+    @include vars.sp {
         height: 26.8rem;
     }
 
     p {
-        @include text-style(1.8rem, calc(33/18));
+        @include vars.text-style(1.8rem, calc(33/18));
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
         pointer-events: none;
-        @include transition;
+        @include vars.transition;
     }
 }
 
@@ -478,16 +479,16 @@
 .blog-details-side__banner-link {
     width: 22rem;
     height: 17rem;
-    background-color: $color-band;
-    @include transition;
+    background-color: vars.$color-band;
+    @include vars.transition;
 
-    @include sp {
+    @include vars.sp {
         width: 29.5rem;
         height: 22.8rem;
     }
 
     &:hover {
-        @include hover-opacity;
+        @include vars.hover-opacity;
     }
 }
 
@@ -498,14 +499,14 @@
 }
 
 .blog-details-side__search-box {
-    border: 0.5px solid $color-text;
+    border: 0.5px solid vars.$color-text;
     width: 100%;
     height: 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    @include sp {
+    @include vars.sp {
         height:9.3rem;
     }
 }
@@ -513,15 +514,15 @@
 .blog-details-side__search__box-input {
     width: 18rem;
     height: 4rem;
-    background-color: $color-band;
+    background-color: vars.$color-band;
     border: none;
     outline: none;
     padding: 0 1rem;
     font-size: 1.6rem;
     font-weight: 500;
-    color: $color-text;
+    color: vars.$color-text;
 
-    @include sp {
+    @include vars.sp {
         width: 24.1rem;
         height: 5.4rem;
         padding: 0 1.5rem;
@@ -529,7 +530,7 @@
     }
 
     &:focus {
-        background-color: rgba($color-band, 0.5);
+        background-color: rgba(vars.$color-band, 0.5);
     }
 }
 
@@ -539,23 +540,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $color-text;
+    background-color: vars.$color-text;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
 
-    @include sp {
+    @include vars.sp {
         width: 5.4rem;
         height: 5.4rem;
     }
 
     &:hover {
-        background-color: rgba($color-text, 0.6);
+        background-color: rgba(vars.$color-text, 0.6);
     }
 
     img {
         width: auto;
-        @include sp {
+        @include vars.sp {
             width: 2.6rem;
         }
     }
@@ -572,7 +573,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    @include sp {
+    @include vars.sp {
         margin-top: 2.2rem;
         gap: 2rem;
     }
@@ -581,13 +582,13 @@
 .blog-details-side__recommend__box-item {
     display: flex;
     gap: 1.5rem;
-    @include transition;
+    @include vars.transition;
 
     &:hover {
-        @include hover-opacity;
+        @include vars.hover-opacity;
     }
 
-    @include sp {
+    @include vars.sp {
         gap: 2rem;
     }
 }
@@ -595,8 +596,8 @@
 .blog-details-side__recommend__box__item-image {
     width: 9.5rem;
     height: 7.5rem;
-    background-color: $color-band;
-    @include sp {
+    background-color: vars.$color-band;
+    @include vars.sp {
         width: 16rem;
         height: 11rem;
     }
@@ -604,18 +605,18 @@
 
 .blog-details-side__recommend__box__item-text {
     flex: 1;
-    @include sp {
+    @include vars.sp {
         width: 100%;
     }
     p {
-        @include text-style(1.7rem, calc(28/17));
+        @include vars.text-style(1.7rem, calc(28/17));
         font-weight: 500;
         display: -webkit-box;
         -webkit-line-clamp: 2; 
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
-        @include sp {
+        @include vars.sp {
             margin-top: 0.8rem;
         }
     }
@@ -629,19 +630,19 @@
 
 
 .blog-details-side__category__box-item {
-    @include transition;
-    @include text-style(1.7rem, calc(28/17));
+    @include vars.transition;
+    @include vars.text-style(1.7rem, calc(28/17));
     font-weight: 500;
-    padding-top: 0.95rem;
-    padding-bottom: 0.95rem;
-    border-bottom: 0.5px solid $color-text;
+    border-bottom: 0.5px solid vars.$color-text;
 
-    a:hover {
-        .category-item__text {
-          @include hover-opacity;
-        }
+    a {
+        padding-top: 0.95rem;
+        padding-bottom: 0.95rem;
     }
 
+    a:hover {
+          @include vars.hover-opacity;
+    }
 } 
 
 

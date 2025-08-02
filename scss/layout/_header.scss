@@ -1,10 +1,12 @@
+@use "../foundation/variable" as vars;
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 999;
-    background-color: $color-white;
+    background-color: vars.$color-white;
 }
 
 .header-content {
@@ -15,7 +17,7 @@
     max-width: 108rem;
     height: 8rem;
     margin: 0 auto;
-    @include sp {
+    @include vars.sp {
         height: 5rem;
         padding: 1rem 0 1rem 1.7rem;
     }
@@ -27,10 +29,10 @@
     height: inherit;
     display: flex;
     align-items: center;
-    @include text-style(2rem, calc(23/20));
+    @include vars.text-style(2rem, calc(23/20));
    
-    @include sp {
-        @include text-style(1.3rem, calc(14/13));
+    @include vars.sp {
+        @include vars.text-style(1.3rem, calc(14/13));
     }
     
     a {
@@ -39,16 +41,16 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        @include sp {
+        @include vars.sp {
             flex-direction: row;
             align-items: center;
         }
     }
     
     span {
-        @include text-style(1.5rem, calc(23/15));
-        @include sp {
-            @include text-style(1.3rem, calc(14/13));
+        @include vars.text-style(1.5rem, calc(23/15));
+        @include vars.sp {
+            @include vars.text-style(1.3rem, calc(14/13));
         }
     }
 }
@@ -60,13 +62,13 @@
     height: inherit;
     position: relative;
     padding-left: 4.2rem;
-    @include transition;
+    @include vars.transition;
     
     &:hover {
-        @include hover-opacity;
+        @include vars.hover-opacity;
     }
     
-    @include sp {
+    @include vars.sp {
         padding-left: 3rem;
     }
     
@@ -80,7 +82,7 @@
         height: 4.9rem;
         background-image: url('../image/top/logo_header.svg');
         
-        @include sp {
+        @include vars.sp {
             left: 1%;
             top: 50%;
             transform: translateY(-50%);
@@ -99,7 +101,7 @@
     display: flex;
     align-items: center;
 
-    @include sp {
+    @include vars.sp {
         display: none;
     }
     nav {
@@ -128,10 +130,10 @@
             padding-inline: 1rem;
             display: flex;
             align-items: center;
-            @include transition;
+            @include vars.transition;
             
             &:hover {
-                @include hover-opacity;
+                @include vars.hover-opacity;
             }
         }
 
@@ -142,7 +144,7 @@
             left: 0;
             width: 100%;
             height: 0.2rem;
-            background-color: $color-text;
+            background-color: vars.$color-text;
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -156,7 +158,7 @@
 
 
 .header__nav-link {
-    @include text-style(1.7rem, calc(33/17));
+    @include vars.text-style(1.7rem, calc(33/17));
     height: inherit;
     display: flex;
     align-items: center;
@@ -167,12 +169,12 @@
 }
 
 .btn-header {
-    @include text-style(1.5rem, calc(33/15));
+    @include vars.text-style(1.5rem, calc(33/15));
     padding: 0.5rem 3rem!important;
-    @include transition;
+    @include vars.transition;
     &:hover {
-        @include hover-reversecolor;
-        border: 0.1rem solid $color-main;
+        @include vars.hover-reversecolor;
+        border: 0.1rem solid vars.$color-main;
         opacity: 1 !important;
     }
 }
@@ -185,8 +187,8 @@
     right: 0;
     width: 7rem;
     height: 5rem;
-    background: $color-main;
-    border: 0.1rem solid $color-main;
+    background: vars.$color-main;
+    border: 0.1rem solid vars.$color-main;
     cursor: pointer;
 
     /* active状態 */
@@ -216,7 +218,7 @@
     top: 2.3rem;
     width: 3.2rem;
     height: 0.4rem;
-    background: $color-white;
+    background: vars.$color-white;
     border-radius: 0.2rem;
     -webkit-transition: .3s;
     transition: .3s;
@@ -244,7 +246,7 @@
     top: 5rem;
     right: 0;
     width: 30rem;
-    background: $color-main;
+    background: vars.$color-main;
     transition: transform 0.3s ease;
     z-index: 999;
     transform: translateX(100%);
@@ -265,13 +267,13 @@
                 a {
                     display: block;
                     padding: 1.5rem 0 1rem 2rem;
-                    @include text-style(1.8rem, calc(33/18));
+                    @include vars.text-style(1.8rem, calc(33/18));
                     text-decoration: none;
-                    color: $color-white;
-                    @include transition;
+                    color: vars.$color-white;
+                    @include vars.transition;
                     
                     &:hover {
-                        background-color: $color-black;
+                        background-color: vars.$color-black;
                     }
                 }
             }
