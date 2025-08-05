@@ -511,16 +511,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-inline: 2rem;
+
 
     @include vars.sp {
         height:9.3rem;
-        padding-inline: 2rem;
 
     }
 }
 
 .blog-details-side__search__box-input {
-    width: 18rem;
     height: 4rem;
     background-color: vars.$color-band;
     border: none;
@@ -529,9 +529,9 @@
     font-size: 1.6rem;
     font-weight: 500;
     color: vars.$color-text;
+    flex: 1;
 
     @include vars.sp {
-        width: 100%;
         height: 5.4rem;
         padding: 0 1.5rem;
         font-size: 1.8rem;

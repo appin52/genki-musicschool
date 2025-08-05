@@ -65,12 +65,18 @@
 
 .voice__card-image {
     overflow: hidden;
-    width: 33.5rem;
+    width: 27rem;
+    @include vars.sp {
+        width: 33.5rem;
+    }
 
     img {
         @include vars.transition;
         object-fit: cover;
+        aspect-ratio: 27 / 19;
+        @include vars.sp {
         aspect-ratio: 33.5 / 20;
+        }
     }
 }
 
