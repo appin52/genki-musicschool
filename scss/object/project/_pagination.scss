@@ -74,9 +74,7 @@
 // 検索結果一覧
 .search__pagination {
     margin-top: 7rem;
-    margin-bottom: 14.8rem;
     @include vars.sp {
         margin-top: 6rem;
-        margin-bottom: 14.5rem;
     }
 }

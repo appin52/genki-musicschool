@@ -1,19 +1,16 @@
 @use "../../foundation/variable" as vars;
 .plan__main {
+    padding-top: 7.3rem;
     padding-bottom: 22.3rem;
     @include vars.sp {
+        padding-top: 5.5rem;
         padding-bottom: 18.3rem;
     }
 }
 
 .plan__main-price {
-    margin-top: 7.3rem;
     h2 {
         @include vars.text-style(2.5rem, 1);
-    }
-
-    @include vars.sp {     
-        margin-top: 5.5rem;
     }
 }
 

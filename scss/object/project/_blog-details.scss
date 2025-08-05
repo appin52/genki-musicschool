@@ -2,15 +2,22 @@
 // 枠組み
 
 .blog-details-content {
-    display: flex;
-    gap: 3rem;
     padding-top: 7rem;
     padding-bottom: 19rem;
+
     @include vars.sp {
-        flex-direction: column;
         padding-top: 5rem;
-        padding-bottom:19.5rem;
+        padding-bottom: 19.5rem;
+    }
+
+    .inner {
+        display: flex;
         gap: 3rem;
+        
+        @include vars.sp {
+            flex-direction: column;
+            gap: 3rem;
+        }
     }
 }
 

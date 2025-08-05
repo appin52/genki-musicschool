@@ -646,6 +646,7 @@ a {
   line-height: 1.5625;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -653,6 +654,7 @@ a {
 @media screen and (max-width: 767px) {
   .before-after__item-text p {
     -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 }
 
@@ -935,7 +937,7 @@ a {
 .hamburger-line::after {
   position: absolute;
   left: 1.8rem;
-  top: 2.3rem;
+  top: 2.2em;
   width: 3.2rem;
   height: 0.4rem;
   background: #ffffff;
@@ -961,7 +963,6 @@ a {
   top: 5rem;
   right: 0;
   width: 30rem;
-  background: #CB0000;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -990,13 +991,14 @@ a {
 }
 .hamburger-menu nav ul li a {
   display: block;
-  padding: 1.5rem 0 1rem 2rem;
+  padding: 1.25rem 0 1.25rem 2rem;
   font-size: 1.8rem;
   line-height: 1.8333333333;
   text-decoration: none;
   color: #ffffff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  background-color: #CB0000;
 }
 .hamburger-menu nav ul li a:hover {
   background-color: #000000;
@@ -2313,25 +2315,19 @@ footer {
 }
 
 .plan__main {
+  padding-top: 7.3rem;
   padding-bottom: 22.3rem;
 }
 @media screen and (max-width: 767px) {
   .plan__main {
+    padding-top: 5.5rem;
     padding-bottom: 18.3rem;
   }
 }
 
-.plan__main-price {
-  margin-top: 7.3rem;
-}
 .plan__main-price h2 {
   font-size: 2.5rem;
   line-height: 1;
-}
-@media screen and (max-width: 767px) {
-  .plan__main-price {
-    margin-top: 5.5rem;
-  }
 }
 
 .plan__price-system-btn {
@@ -2707,13 +2703,22 @@ footer {
   background-color: rgba(80, 80, 80, 0.25);
 }
 
+.contact-form-main {
+  padding-top: 6.8rem;
+  padding-bottom: 10rem;
+}
+@media screen and (max-width: 767px) {
+  .contact-form-main {
+    padding-top: 4.7rem;
+    padding-bottom: 10.7rem;
+  }
+}
+
 .contact-form-text {
-  margin-top: 6.8rem;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
   .contact-form-text {
-    margin-top: 4.7rem;
     text-align: left;
   }
 }
@@ -2988,7 +2993,7 @@ footer {
 }
 
 .btn-contact-form {
-  margin: 2rem auto 10rem;
+  margin: 2rem auto 0rem;
   width: 25rem;
   height: 5rem;
   font-size: 2.5rem;
@@ -2998,7 +3003,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .btn-contact-form {
-    margin: 3.8rem auto 10.7rem;
+    margin: 3.8rem auto 0;
     width: 33.5rem;
     height: 5rem;
     font-size: 2rem;
@@ -3010,25 +3015,27 @@ footer {
   background-color: #ffffff;
 }
 
-.contact-send-text {
-  margin-top: 6.8rem;
-  text-align: center;
+.contact-send-main {
+  padding-top: 6.8rem;
+  padding-bottom: 9rem;
 }
 @media screen and (max-width: 767px) {
-  .contact-send-text {
-    margin-top: 4.9rem;
-    text-align: left;
+  .contact-send-main {
+    padding-top: 4.9rem;
+    padding-bottom: 4.9rem;
   }
 }
-.contact-send-text p {
+.contact-send-main p {
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: 500;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
-  .contact-send-text p {
+  .contact-send-main p {
     font-size: 1.6rem;
     line-height: 1.875;
+    text-align: left;
   }
 }
 
@@ -3042,7 +3049,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 4rem auto 9rem;
+  margin: 4rem auto 0rem;
   width: 25rem;
   height: 5rem;
   font-size: 2.5rem;
@@ -3052,7 +3059,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .btn-contact-send {
-    margin: 3.9rem auto 4.9rem;
+    margin: 3.9rem auto 0;
     width: 33.5rem;
     height: 5rem;
     font-size: 2rem;
@@ -3199,21 +3206,27 @@ footer {
 }
 
 .blog-details-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 3rem;
   padding-top: 7rem;
   padding-bottom: 19rem;
 }
 @media screen and (max-width: 767px) {
   .blog-details-content {
+    padding-top: 5rem;
+    padding-bottom: 19.5rem;
+  }
+}
+.blog-details-content .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .blog-details-content .inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 5rem;
-    padding-bottom: 19.5rem;
     gap: 3rem;
   }
 }
@@ -3939,12 +3952,12 @@ footer {
 
 .search__main {
   padding-top: 6.6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 20.8rem;
 }
 @media screen and (max-width: 767px) {
   .search__main {
     padding-top: 3.6rem;
-    padding-bottom: 5.7rem;
+    padding-bottom: 20.2rem;
   }
 }
 
@@ -4101,23 +4114,25 @@ footer {
   }
 }
 
-.not-found-text {
-  margin-top: 6.8rem;
-  text-align: center;
+.not-found__main {
+  padding-top: 6.8rem;
+  padding-bottom: 9rem;
 }
 @media screen and (max-width: 767px) {
-  .not-found-text {
-    margin-top: 4.3rem;
-    text-align: left;
+  .not-found__main {
+    padding-top: 4.3rem;
+    padding-bottom: 4.9rem;
   }
 }
-.not-found-text p {
+.not-found__main p {
+  text-align: center;
   font-size: 1.8rem;
   line-height: 1.6666666667;
   font-weight: 500;
 }
 @media screen and (max-width: 767px) {
-  .not-found-text p {
+  .not-found__main p {
+    text-align: left;
     font-size: 1.6rem;
     line-height: 1.875;
   }
@@ -4125,7 +4140,7 @@ footer {
 
 .btn-not-found {
   display: block;
-  margin: 4rem auto 9rem;
+  margin: 4rem auto 0;
   width: 25rem;
   height: 5rem;
   font-size: 2.5rem;
@@ -4135,7 +4150,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .btn-not-found {
-    margin: 0.9rem auto 4.9rem;
+    margin: 0.9rem auto 0;
     width: 33.5rem;
     height: 5rem;
     font-size: 2rem;
@@ -4597,12 +4612,10 @@ footer {
 
 .search__pagination {
   margin-top: 7rem;
-  margin-bottom: 14.8rem;
 }
 @media screen and (max-width: 767px) {
   .search__pagination {
     margin-top: 6rem;
-    margin-bottom: 14.5rem;
   }
 }
 
