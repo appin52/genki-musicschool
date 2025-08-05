@@ -215,7 +215,7 @@
 .hamburger-line::after {
     position: absolute;
     left: 1.8rem;
-    top: 2.3rem;
+    top: 2.2em;
     width: 3.2rem;
     height: 0.4rem;
     background: vars.$color-white;
@@ -246,7 +246,6 @@
     top: 5rem;
     right: 0;
     width: 30rem;
-    background: vars.$color-main;
     transition: transform 0.3s ease;
     z-index: 999;
     transform: translateX(100%);
@@ -266,11 +265,12 @@
             li {
                 a {
                     display: block;
-                    padding: 1.5rem 0 1rem 2rem;
+                    padding: 1.25rem 0 1.25rem 2rem;
                     @include vars.text-style(1.8rem, calc(33/18));
                     text-decoration: none;
                     color: vars.$color-white;
                     @include vars.transition;
+                    background-color: vars.$color-main;
                     
                     &:hover {
                         background-color: vars.$color-black;

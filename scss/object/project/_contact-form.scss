@@ -1,9 +1,17 @@
 @use "../../foundation/variable" as vars;
+
+.contact-form-main {
+    padding-top: 6.8rem;
+    padding-bottom: 10rem;
+    @include vars.sp {
+        padding-top: 4.7rem;
+        padding-bottom: 10.7rem;
+    }
+}
+
 .contact-form-text {
-    margin-top: 6.8rem;
     text-align: center;
     @include vars.sp {
-        margin-top: 4.7rem;
         text-align: left;
     }
     p {
@@ -223,13 +231,13 @@
 
 // 送信ボタン
 .btn-contact-form {
-    margin: 2rem auto 10rem;
+    margin: 2rem auto 0rem;
     width: 25rem;
     height: 5rem;
     @include vars.text-style(2.5rem, calc(33/25));
     @include vars.transition;
     @include vars.sp {
-        margin: 3.8rem auto 10.7rem;
+        margin: 3.8rem auto 0;
         width: 33.5rem;
         height: 5rem;
         @include vars.text-style(2rem, calc(36/20));

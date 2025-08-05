@@ -13,7 +13,7 @@ html {
       font-size: 10px;
     }
     @media(max-width:375px) {
-      font-size: calc(10 /375 * 100vw);
+      font-size: calc(10 / 375 * 100vw);
     }
 }
 
@@ -258,12 +258,14 @@ a {
         p {
             @include vars.text-style(1.6rem, calc(25/16));
             display: -webkit-box;
-            -webkit-line-clamp: 3; 
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
             @include vars.sp {
                 -webkit-line-clamp: 3;
+                line-clamp: 3;
             }
         }
     }
