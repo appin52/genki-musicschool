@@ -82,9 +82,7 @@
     input{
         @include vars.text-style(1.5rem, calc(33/15));
         font-weight: 500;
-        padding-top: 0.3rem;
-        padding-bottom: 0.3rem;
-        padding-left: 2rem;
+        padding: 0.3rem 2rem;
     }
 }
 
@@ -154,10 +152,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 2rem;
+    margin-top: 0.5rem;
 
     label {
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        height: 2rem;
     }
 
     input[type="checkbox"] {
@@ -166,6 +168,9 @@
     
     span {
         position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
         padding-left: 4rem;
         @include vars.sp {
             padding-left: 3rem;
@@ -197,25 +202,19 @@
 // 内容の枠組み
 .form__items-content {
     align-items: flex-start;
+    margin-top: 0.5rem;
     @include vars.sp {
-        margin-top: -0.5rem;
+        margin-top: 0.1rem;
     }
 
     .form__items-right {
-        margin-top: -0.3rem;
-        @include vars.sp {
-            margin-top: 0;
-        }
-
         textarea {
             width: 100%;
             min-height: 30rem;
             resize: vertical;
             @include vars.text-style(1.5rem, calc(33/15));
             font-weight: 500;
-            padding-top: 1.3rem;
-            padding-bottom: 0.3rem;
-            padding-left: 2rem;
+            padding: 1.3rem 2rem;
             @include vars.sp {
                 min-height: 19rem;
             }
@@ -231,7 +230,7 @@
 
 // 送信ボタン
 .btn-contact-form {
-    margin: 2rem auto 0rem;
+    margin: 1.8rem auto 0rem;
     width: 25rem;
     height: 5rem;
     @include vars.text-style(2.5rem, calc(33/25));
