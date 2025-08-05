@@ -1,4 +1,6 @@
 @use "../../foundation/variable" as vars;
+
+
 .top__flow {
     padding: 3.4rem 0 8.3rem;
     @include vars.sp {
@@ -84,7 +86,7 @@
 .flow__card {
     display: flex;
     align-items: start;
-    width: 76rem;
+    max-width: 76rem;
     position: relative;
     @include vars.sp {
         flex-direction: column;

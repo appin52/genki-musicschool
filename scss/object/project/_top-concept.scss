@@ -8,6 +8,7 @@
 
 .concept__title {
     text-align: center;
+    
     h2 {
         @include vars.text-style(3.5rem, calc(50/35));
         margin-bottom: 1.5rem;
@@ -20,8 +21,7 @@
         font-weight:500;
         @include vars.text-style(1.8rem, calc(30/18));
         @include vars.sp {
-            margin-left: -0.7rem;
-            margin-right: 0.5rem;
+            text-align: left;
         }
     }
 }

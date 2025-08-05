@@ -1529,8 +1529,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .concept__title p {
-    margin-left: -0.7rem;
-    margin-right: 0.5rem;
+    text-align: left;
   }
 }
 
@@ -1778,7 +1777,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .top__voice {
-    padding: 4.5rem 0 1.5rem;
+    padding: 4.5rem 0 5rem;
   }
 }
 
@@ -1847,12 +1846,14 @@ footer {
 
 .voice__card-image {
   overflow: hidden;
+  width: 33.5rem;
 }
 .voice__card-image img {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 33.5/20;
 }
 
 .voice__card-text h3 {
@@ -1985,7 +1986,7 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  width: 76rem;
+  max-width: 76rem;
   position: relative;
 }
 @media screen and (max-width: 767px) {
@@ -2431,41 +2432,6 @@ footer {
     line-height: 1.6;
   }
 }
-.plan__main-plan h3 {
-  font-size: 2.2rem;
-  line-height: 1.65;
-}
-.plan__main-plan h4 {
-  font-size: 2rem;
-  line-height: 1.65;
-}
-@media screen and (max-width: 767px) {
-  .plan__main-plan h4 {
-    font-size: 2rem;
-    line-height: 1.25;
-  }
-}
-.plan__main-plan h5 {
-  font-size: 1.7rem;
-  line-height: 1.7647058824;
-}
-@media screen and (max-width: 767px) {
-  .plan__main-plan h5 {
-    font-size: 1.6rem;
-    line-height: 1.875;
-  }
-}
-.plan__main-plan h6 {
-  font-size: 1.7rem;
-  line-height: 1.4705882353;
-  font-weight: 500;
-}
-@media screen and (max-width: 767px) {
-  .plan__main-plan h6 {
-    font-size: 1.6rem;
-    line-height: 1.5625;
-  }
-}
 .plan__main-plan p {
   font-size: 1.7rem;
   line-height: 1.9411764706;
@@ -2520,6 +2486,14 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 2rem;
+  line-height: 1.65;
+}
+@media screen and (max-width: 767px) {
+  .plan__table-cell {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
 }
 
 .plan__table-recommend {
@@ -2564,23 +2538,45 @@ footer {
   }
 }
 
-.plan__table-title {
+.plan__table-title,
+.plan__table-title-price {
   text-align: left !important;
   padding-left: 2rem !important;
 }
 @media screen and (max-width: 767px) {
-  .plan__table-title {
+  .plan__table-title,
+  .plan__table-title-price {
     padding-left: 1rem !important;
   }
 }
 
+.plan__table-title-price {
+  font-size: 1.7rem;
+  line-height: 1.7647058824;
+}
+@media screen and (max-width: 767px) {
+  .plan__table-title-price {
+    font-size: 1.6rem;
+    line-height: 1.875;
+  }
+}
+
+.plan__table-price {
+  font-size: 2.2rem;
+  line-height: 1.65;
+}
+
 .plan__table-title {
-  text-align: left;
   padding: 1rem 0.5rem 1rem 2rem;
+  font-size: 1.7rem;
+  line-height: 1.4705882353;
+  font-weight: 500;
 }
 @media screen and (max-width: 767px) {
   .plan__table-title {
     padding: 0.8rem 0.5rem 0.8rem 1rem;
+    font-size: 1.6rem;
+    line-height: 1.5625;
   }
 }
 
