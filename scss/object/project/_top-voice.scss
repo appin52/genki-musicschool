@@ -2,7 +2,7 @@
 .top__voice {
     padding: 4.4rem 0 8rem;
     @include vars.sp {
-        padding: 4.5rem 0 1.5rem;
+        padding: 4.5rem 0 5rem;
     }
 }
 
@@ -65,10 +65,18 @@
 
 .voice__card-image {
     overflow: hidden;
+    width: 27rem;
+    @include vars.sp {
+        width: 33.5rem;
+    }
 
     img {
         @include vars.transition;
         object-fit: cover;
+        aspect-ratio: 27 / 19;
+        @include vars.sp {
+        aspect-ratio: 33.5 / 20;
+        }
     }
 }
 

@@ -8,6 +8,7 @@
 
 .concept__title {
     text-align: center;
+    
     h2 {
         @include vars.text-style(3.5rem, calc(50/35));
         margin-bottom: 1.5rem;
@@ -20,8 +21,7 @@
         font-weight:500;
         @include vars.text-style(1.8rem, calc(30/18));
         @include vars.sp {
-            margin-left: -0.7rem;
-            margin-right: 0.5rem;
+            text-align: left;
         }
     }
 }
@@ -68,24 +68,26 @@
 
 .concept__3e__item-en {
     @include vars.text-style(2.5rem, calc(50/25));
-    @include vars.sp {
-        @include vars.text-style(2rem, calc(50/20));
-    }
     flex: 1;
     text-align: right;
     padding-right: 2rem;
+    
+    @include vars.sp {
+        @include vars.text-style(2rem, calc(50/20));
+    }
 }
 
 .concept__3e__item-jp {
     @include vars.text-style(2.3rem, calc(50/23));
-    @include vars.sp {
-        @include vars.text-style(2rem, calc(50/20));
-    }
     font-weight: 500;
     color: vars.$color-text;
     flex: 1;
     text-align: left;
     padding-left: 2rem;
+    
+    @include vars.sp {
+        @include vars.text-style(2rem, calc(50/20));
+    }
 }
 
 .concept-radius-red {
