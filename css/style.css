@@ -3793,11 +3793,12 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-inline: 2rem;
+  padding-inline: 1.5rem;
 }
 @media screen and (max-width: 767px) {
   .blog-details-side__search-box {
     height: 9.3rem;
+    padding-inline: 2rem;
   }
 }
 
@@ -4102,6 +4103,7 @@ footer {
     margin-top: 0.9rem;
     font-size: 1.6rem;
     line-height: 1.875;
+    -webkit-line-clamp: 5;
   }
 }
 .search__card-text span {

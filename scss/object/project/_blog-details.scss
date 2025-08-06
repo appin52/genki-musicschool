@@ -511,11 +511,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
+
 
 
     @include vars.sp {
         height:9.3rem;
+        padding-inline: 2rem;
+
 
     }
 }

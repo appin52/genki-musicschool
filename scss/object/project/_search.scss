@@ -111,6 +111,8 @@
         @include vars.sp {
             margin-top: 0.9rem;
             @include vars.text-style(1.6rem, calc(30/16));
+            -webkit-line-clamp: 5; 
+
         }
     }
 
