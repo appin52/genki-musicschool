@@ -95,7 +95,9 @@
         }
     }
 
-
+    @include vars.sp {
+        gap: 1rem;
+    }
 }   
 
 // 枠組み

@@ -2846,6 +2846,11 @@ footer {
     line-height: 2.0625;
   }
 }
+@media screen and (max-width: 767px) {
+  .form__items-question {
+    gap: 1rem;
+  }
+}
 
 .form__items-company .form__items-right,
 .form__items-name .form__items-right,
