@@ -21,7 +21,9 @@
 
 // 送信ボタン
 .btn-not-found {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 4rem auto 0; 
     width: 25rem;
     height: 5rem;
