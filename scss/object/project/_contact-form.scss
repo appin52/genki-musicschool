@@ -125,10 +125,7 @@
 // 質問の枠組み
 .form__items-question {
     align-items: flex-start;
-    margin-top: -0.6rem;
-    @include vars.sp {
-        margin-top: 1rem;
-    }
+
     .form__items-right {
         span {
             @include vars.text-style(1.8rem, calc(30/18));
@@ -153,7 +150,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 2rem;
-    margin-top: 0.5rem;
 
     label {
         cursor: pointer;
@@ -202,10 +198,6 @@
 // 内容の枠組み
 .form__items-content {
     align-items: flex-start;
-    margin-top: 0.5rem;
-    @include vars.sp {
-        margin-top: 0.1rem;
-    }
 
     .form__items-right {
         textarea {
